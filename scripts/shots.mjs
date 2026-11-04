@@ -9,7 +9,7 @@ const page = await browser.newPage({ viewport: { width: w, height: Math.round(w 
 const errs = [];
 page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') errs.push(m.text()); });
 page.on('pageerror', (e) => errs.push('PAGEERROR ' + e.message));
-await page.goto(`http://localhost:5173/?render&w=${w}`);
+await page.goto(`http://localhost:${process.env.PORT || 5173}/?render&w=${w}`);
 await page.waitForFunction(() => window.__ready, null, { timeout: 120000 });
 await page.evaluate(() => window.__ready);
 for (const t of times) {

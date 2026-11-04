@@ -14,6 +14,8 @@ Each beat was re-staged as its own 3D scene.
 - [Opus 5.5 animation](https://andrew-chen-wang.github.io/threejs-animation-experimentation/) — the original project in this repository.
 - [Codex 6 Astra Low animation](https://andrew-chen-wang.github.io/threejs-animation-experimentation/codex-6-astra-low/) — a separate experiment with its own [rendered finale](https://andrew-chen-wang.github.io/threejs-animation-experimentation/codex-6-astra-low/watch.html) and [learnings](codex-6-astra-low/README.md).
 
+- [How many points is a life?](https://andrew-chen-wang.github.io/threejs-animation-experimentation/drone-points/): a recreation of [a Belltake reel](https://www.instagram.com/p/De1ywGthBlQ/) about Ukraine's drone e-points, with its own [notes](drone-points/README.md) and [rendered video](drone-points/renders/points-per-life-540p.mp4).
+
 It seemed like **Opus 5.5 did a better job overall**, as a qualitative assessment of these experiments. The Codex notes cover the successive corrections around explanation, sustained motion, and the 3D pencil-drawn style.
 
 The original script is pretty bad at explaining where the airplane positions come from. The missing bridge is time-stamped aircraft tracking data (for example, ADS-B observations): known flight paths let you predict what different locations would hear and compare that with the video's audio. The [Codex README](codex-6-astra-low/README.md#assessment) expands on that limitation.

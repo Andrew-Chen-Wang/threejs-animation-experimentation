@@ -6,3 +6,4 @@ public/audio/*
 !public/audio/.gitkeep
 
 _site/
+drone-points/dist/
