@@ -112,7 +112,7 @@ const playBtn = document.getElementById('play'), scrub = document.getElementById
 scrub.max = END_TIME;
 
 async function probeAudio() {
-  for (const src of ['/audio/narration.m4a', '/audio/narration.mp3', '/audio/narration.wav']) {
+  for (const src of ['audio/narration.m4a', 'audio/narration.mp3', 'audio/narration.wav']) {
     try { const r = await fetch(src, { method: 'HEAD' }); if (r.ok && !(r.headers.get('content-type') || '').includes('text/html')) { audio.src = src; hasAudio = true; return; } } catch (e) { /* ignore */ }
   }
 }
