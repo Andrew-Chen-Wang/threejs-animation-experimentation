@@ -9,6 +9,12 @@ The visuals here are new, not a frame-by-frame copy. They keep the reference's l
 grey illustration, one red accent, bold serif captions with a red key word, and mono HUD labels.
 Each beat was re-staged as its own 3D scene.
 
+## Watch it
+
+[`renders/the-sound-that-finds-you-540p.mp4`](renders/the-sound-that-finds-you-540p.mp4) is a 540×960, 30 fps render of the
+redesigned version. It's silent: the narration belongs to the reel's creator and isn't redistributed
+here. Run the project with your own copy of the audio to hear it in sync.
+
 ## Run it
 
 ```bash
