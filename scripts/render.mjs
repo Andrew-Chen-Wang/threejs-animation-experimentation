@@ -1,5 +1,5 @@
 // Offline render to MP4: drives the page frame-by-frame in headless Chromium and pipes PNGs into ffmpeg.
-// Usage:  npx vite --port 5173 &
+// Usage:  npx vite --port 5173 &   (options: --w, --fps, --from, --to, --crf)
 //         node scripts/render.mjs [out.mp4] [--w 1080] [--fps 30] [--from 0] [--to 178.8]
 // Set GPU=1 to use the machine's GPU instead of SwiftShader.
 import { createRequire } from 'module';
@@ -12,7 +12,7 @@ const { chromium } = require('playwright');
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf('--' + k); return i >= 0 ? args[i + 1] : d; };
 const out = args[0] && !args[0].startsWith('--') ? args[0] : 'out/render.mp4';
-const W = +opt('w', 1080), FPS = +opt('fps', 30), FROM = +opt('from', 0);
+const W = +opt('w', 1080), FPS = +opt('fps', 30), FROM = +opt('from', 0), CRF = opt('crf', '17');
 const H = Math.round(W * 16 / 9);
 mkdirSync(dirname(out), { recursive: true });
 
@@ -28,7 +28,7 @@ const TO = +opt('to', await page.evaluate(() => window.__duration));
 const audio = ['public/audio/narration.m4a', 'public/audio/narration.mp3', 'public/audio/narration.wav'].find(existsSync);
 const ff = spawn('ffmpeg', ['-v', 'error', '-y', '-f', 'image2pipe', '-framerate', String(FPS), '-i', '-',
   ...(audio ? ['-ss', String(FROM), '-i', audio, '-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '160k', '-shortest'] : []),
-  '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '17', '-preset', 'medium', '-movflags', '+faststart', out],
+  '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', CRF, '-preset', 'slow', '-movflags', '+faststart', out],
   { stdio: ['pipe', 'inherit', 'inherit'] });
 
 const n = Math.ceil((TO - FROM) * FPS); const t0 = Date.now();
