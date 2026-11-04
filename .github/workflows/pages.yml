@@ -25,7 +25,6 @@ jobs:
       - run: npm run test:film --prefix codex-6-astra-low
       - run: npm run check:film --prefix codex-6-astra-low
       - run: npm run build
-      - run: npm run build:thailand
       - run: npm run build:film --prefix codex-6-astra-low
       - run: node scripts/build-pages.mjs
       - uses: actions/configure-pages@v5
