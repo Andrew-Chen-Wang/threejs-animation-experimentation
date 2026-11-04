@@ -7,13 +7,13 @@ import { T } from './times.js';
 
 export const COL = {
   bg: '#161412', fpvFog: '#3a3732', line: '#3a3631', streak: '#4d473f',
-  hull: '#2c2925', edge: '#9a9284', smokeL: '#a9a296', smokeM: '#736d64', smokeD: '#4a4540',
+  hull: '#2c2925', edge: '#c4bba9', smokeL: '#a9a296', smokeM: '#736d64', smokeD: '#4a4540',
   fire: '#d9542c', fire2: '#f29a45', drone: '#ebe5d8', ir: '#0e0e0d', irHot: '#f1ece0',
 };
 
 function edged(geo, fill, edge = COL.edge, edgeOpacity = 0.75) {
   const g = new THREE.Group();
-  const m = new THREE.Mesh(geo, new THREE.MeshLambertMaterial({ color: fill }));
+  const m = new THREE.Mesh(geo, new THREE.MeshLambertMaterial({ color: fill, transparent: true, opacity: 0.72 }));
   m.castShadow = true;
   g.add(m);
   const e = new THREE.LineSegments(new THREE.EdgesGeometry(geo, 25), new THREE.LineBasicMaterial({ color: edge, transparent: true, opacity: edgeOpacity }));
@@ -152,13 +152,101 @@ function makeGround(seed = 3) {
 
 function farPlume(x, z, seed) {
   const g = new THREE.Group(); const R = rng(seed);
-  const m = new THREE.MeshLambertMaterial({ color: '#6a655d', transparent: true, opacity: 0.55 });
-  for (let i = 0; i < 9; i++) {
-    const s = new THREE.Mesh(new THREE.IcosahedronGeometry(1.5 + i * 0.5, 1), m);
-    s.position.set(x + i * 1.2 + R(), 2 + i * 3.2, z + R()); g.add(s);
+  const m = new THREE.MeshBasicMaterial({ color: '#7d766b', transparent: true, opacity: 0.38, fog: false, depthWrite: false });
+  for (let i = 0; i < 16; i++) {
+    const s = new THREE.Mesh(new THREE.IcosahedronGeometry(1.1 + i * 0.32, 1), m);
+    s.position.set(x + R() * 0.6, 1 + i * 2.6, z + i * i * 0.06 + R() * 0.6); g.add(s);
   }
   return g;
 }
+
+
+/** detail that only exists for the FPV dive: drawn sky, verge grass, poles + wires, reeds, a red marker */
+function makeFpvSet(seed = 21) {
+  const g = new THREE.Group(); const R = rng(seed);
+  const lines = (arr, color, op, fog = true) => {
+    const geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.Float32BufferAttribute(arr, 3));
+    return new THREE.LineSegments(geo, new THREE.LineBasicMaterial({ color, transparent: true, opacity: op, fog }));
+  };
+  // sky: horizontal strokes on a far wall, packed tight and bright at the horizon, sparse and dim above
+  for (let i = 0; i < 70; i++) {
+    const f = i / 69, y = 0.2 + Math.pow(f, 1.8) * 120, op = 0.85 * Math.pow(1 - f, 2.2) + 0.04;
+    const arr = [];
+    for (let j = 0; j < 6; j++) { const z0 = -500 + j * 170 + R() * 30; arr.push(320, y, z0, 320, y + (R() - 0.5) * 0.6, z0 + 140 + R() * 40); }
+    g.add(lines(arr, f < 0.08 ? '#efe6d2' : '#c9bfab', op, false));
+  }
+  const glow = new THREE.Mesh(new THREE.PlaneGeometry(1200, 10), new THREE.MeshBasicMaterial({ color: '#d9cfba', transparent: true, opacity: 0.35, fog: false }));
+  glow.position.set(321, 3, 0); glow.rotation.y = -Math.PI / 2; g.add(glow);
+  // a far, dark tree band right on the horizon
+  { const arr = []; for (let i = 0; i < 900; i++) { const z = -400 + R() * 800, h = 1.5 + R() * 4; arr.push(300, 0, z, 300, h, z + (R() - 0.5)); } g.add(lines(arr, '#0f0e0c', 0.9, false)); }
+  // grass: short strokes, dense along both verges, thinner out in the field
+  { const near = [], far = [];
+    for (let i = 0; i < 14000; i++) {
+      const verge = R() < 0.5, side = R() < 0.5 ? -1 : 1;
+      const x = -160 + R() * 200, z = verge ? side * (3.4 + Math.pow(R(), 2.2) * 14) : (R() - 0.5) * 120;
+      const h = (verge ? 0.3 : 0.15) + Math.pow(R(), 2) * (verge ? 1.4 : 0.5), lean = (R() - 0.5) * 0.5;
+      (verge ? near : far).push(x, 0, z, x + lean, h, z + lean * 0.4);
+    }
+    g.add(lines(near, '#7a7366', 0.32)); g.add(lines(far, '#4f4a42', 0.45)); }
+  // road edges + skid/motion strokes
+  { const arr = []; for (const z of [-3.05, 3.05]) arr.push(-400, 0.03, z, 200, 0.03, z);
+    for (let i = 0; i < 260; i++) { const x = -160 + R() * 200, z = (R() - 0.5) * 5.6, l = 0.6 + R() * 3; arr.push(x, 0.04, z, x + l, 0.04, z); }
+    g.add(lines(arr, '#6e675c', 0.5)); }
+  // utility poles along the right verge, leaning a little, with sagging wires between them
+  const poleMat = new THREE.MeshLambertMaterial({ color: '#0d0c0b' });
+  const tops = [];
+  for (let i = 0; i < 9; i++) {
+    const x = -150 + i * 19 + R() * 3, h = 8.5 + R() * 1.5, lean = (R() - 0.5) * 0.12;
+    const p = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.14, h, 6), poleMat);
+    p.position.set(x, h / 2, 8.5); p.rotation.z = lean; p.rotation.x = (R() - 0.5) * 0.08; g.add(p);
+    const bar = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.1, 1.6), poleMat); bar.position.set(x - Math.sin(lean) * h * 0.95, h * 0.95, 8.5); g.add(bar);
+    tops.push([x - Math.sin(lean) * h * 0.95, h * 0.95]);
+  }
+  { const arr = [];
+    for (const dz of [-0.7, 0, 0.7]) for (let i = 0; i < tops.length - 1; i++) {
+      const [x0, y0] = tops[i], [x1, y1] = tops[i + 1];
+      for (let k = 0; k < 12; k++) {
+        const a = k / 12, b = (k + 1) / 12, sag = (u) => -1.4 * 4 * u * (1 - u);
+        arr.push(lerp(x0, x1, a), lerp(y0, y1, a) + sag(a), 8.5 + dz, lerp(x0, x1, b), lerp(y0, y1, b) + sag(b), 8.5 + dz);
+      }
+    }
+    g.add(lines(arr, '#151311', 0.95)); }
+  // the one red accent: a marker ball on the wire
+  const ball = new THREE.Mesh(new THREE.SphereGeometry(0.36, 16, 12), new THREE.MeshBasicMaterial({ color: '#d0472c' }));
+  ball.position.set(lerp(tops[5][0], tops[6][0], 0.4), lerp(tops[5][1], tops[6][1], 0.4) - 1.3, 8.5); g.add(ball);
+  // reeds and broken sticks, dark, leaning every which way
+  for (let i = 0; i < 120; i++) {
+    const h = 1.2 + R() * 4.5, side = R() < 0.6 ? 1 : -1;
+    const st = new THREE.Mesh(new THREE.BoxGeometry(0.06, h, 0.06), poleMat);
+    st.position.set(-150 + R() * 160, h / 2, side * (4 + R() * 9)); st.rotation.set((R() - 0.5) * 0.4, 0, (R() - 0.5) * 0.5); g.add(st);
+  }
+  return g;
+}
+
+/** the dust the moving tank kicks up: puffs left behind along the road, growing and fading with age */
+function makeDust(seed = 31) {
+  const g = new THREE.Group(); const R = rng(seed); const puffs = [];
+  const geo = new THREE.IcosahedronGeometry(1, 1);
+  for (let i = 0; i < 26; i++) {
+    const m = new THREE.Mesh(geo, new THREE.MeshLambertMaterial({ color: '#6f685e', transparent: true, opacity: 0.3, depthWrite: false }));
+    puffs.push({ m, born: -2.6 + i * 0.2, dz: (R() - 0.5) * 2, dy: R() * 0.6 }); g.add(m);
+  }
+  g.userData.update = (t, tankX) => {
+    for (const p of puffs) {
+      const age = t - p.born;
+      if (age < 0) { p.m.visible = false; continue; }
+      p.m.visible = true;
+      const x0 = tankPathX(p.born) - 3.6;
+      const s = 0.6 + age * 0.9;
+      p.m.scale.set(s * 1.4, s * 0.7, s);
+      p.m.position.set(Math.min(x0, tankX - 3.4), 0.5 + p.dy + age * 0.35, p.dz * (1 + age * 0.3));
+      p.m.material.opacity = 0.32 * Math.max(0, 1 - age / 3.2);
+    }
+  };
+  return g;
+}
+/** the tank drives up the road during the dive and is stopped by the hit */
+export const tankPathX = (t) => -16 * (1 - ease.out(clamp(t / T.hit)));
 
 export function buildWorld() {
   const scene = new THREE.Scene();
@@ -171,8 +259,10 @@ export function buildWorld() {
   sun.shadow.mapSize.set(1024, 1024); Object.assign(sun.shadow.camera, { left: -15, right: 15, top: 15, bottom: -15 }); scene.add(sun);
 
   const ground = makeGround(); scene.add(ground);
-  const plumes = new THREE.Group(); plumes.add(farPlume(60, -110, 2), farPlume(-40, -150, 5), farPlume(130, -90, 9)); scene.add(plumes);
+  const plumes = new THREE.Group(); plumes.add(farPlume(280, -95, 2), farPlume(285, -45, 5)); scene.add(plumes);
   const tank = makeTank(); scene.add(tank);
+  const fpvSet = makeFpvSet(); scene.add(fpvSet);
+  const dust = makeDust(); scene.add(dust);
   const smoke = makeSmoke(); scene.add(smoke);
   const strike = makeDrone(); strike.scale.setScalar(1.4); scene.add(strike);
 
@@ -193,9 +283,11 @@ export function buildWorld() {
     smoke.userData.update(t);
     const fpv = t < T.hit;
     const irMode = t >= T.irIn;
-    plumes.visible = fpv;
+    plumes.visible = fpv; fpvSet.visible = fpv; dust.visible = fpv;
+    tank.position.x = tankPathX(Math.min(t, T.hit));
+    if (fpv) dust.userData.update(t, tank.position.x);
     scene.fog.color.set(fpv ? COL.fpvFog : irMode ? COL.ir : COL.bg);
-    scene.background.set(fpv ? COL.fpvFog : irMode ? COL.ir : COL.bg);
+    scene.background.set(fpv ? '#1d1b18' : irMode ? COL.ir : COL.bg);
     scene.fog.near = fpv ? 20 : 40; scene.fog.far = fpv ? 210 : 160;
     tank.visible = !irMode; smoke.visible = !irMode;
     hemi.intensity = irMode ? 0.6 : 1.4;
