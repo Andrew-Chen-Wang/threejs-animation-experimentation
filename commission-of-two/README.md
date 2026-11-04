@@ -12,6 +12,10 @@ The reference also uses press photos of real officials and a presenter talking t
 **not** reproduced. Officials appear as faceless clay figures and halftoned silhouette cards marked
 "illustrative", and the presenter shots are replaced by more clay scenes.
 
+## Watch it
+
+[`renders/commission-of-two-540p.mp4`](renders/commission-of-two-540p.mp4) is a silent 540×960, 30 fps render. The narration isn't committed.
+
 ## Run
 
 ```bash
