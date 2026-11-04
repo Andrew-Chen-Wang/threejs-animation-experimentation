@@ -1,4 +1,4 @@
-import {cpSync,copyFileSync,mkdirSync,rmSync,writeFileSync} from 'node:fs';
+import {cpSync,copyFileSync,existsSync,mkdirSync,rmSync,writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 const site=resolve('_site');
 rmSync(site,{recursive:true,force:true});
@@ -12,4 +12,6 @@ copyFileSync('codex-6-astra-low/watch.html',resolve(codex,'watch.html'));
 cpSync('codex-6-astra-low/renders',resolve(codex,'renders'),{recursive:true});
 mkdirSync(resolve(site,'audio'),{recursive:true});
 copyFileSync('codex-6-astra-low/public/film/audio.m4a',resolve(site,'audio/narration.m4a'));
+cpSync('commission-of-two/dist',resolve(site,'commission-of-two'),{recursive:true});
+if(existsSync('commission-of-two/renders'))cpSync('commission-of-two/renders',resolve(site,'commission-of-two/renders'),{recursive:true});
 writeFileSync(resolve(site,'.nojekyll'),'');

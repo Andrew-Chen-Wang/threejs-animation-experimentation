@@ -12,6 +12,7 @@ Each beat was re-staged as its own 3D scene.
 ## Published experiments
 
 - [Opus 5.5 animation](https://andrew-chen-wang.github.io/threejs-animation-experimentation/) — the original project in this repository.
+- [Commission of Two](https://andrew-chen-wang.github.io/threejs-animation-experimentation/commission-of-two/) — a second piece in a different style: grey clay 3D, tilt-shift blur, pixel-font labels. See [commission-of-two/README.md](commission-of-two/README.md).
 - [Codex 6 Astra Low animation](https://andrew-chen-wang.github.io/threejs-animation-experimentation/codex-6-astra-low/) — a separate experiment with its own [rendered finale](https://andrew-chen-wang.github.io/threejs-animation-experimentation/codex-6-astra-low/watch.html) and [learnings](codex-6-astra-low/README.md).
 
 It seemed like **Opus 5.5 did a better job overall**, as a qualitative assessment of these experiments. The Codex notes cover the successive corrections around explanation, sustained motion, and the 3D pencil-drawn style.
