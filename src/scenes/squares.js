@@ -60,6 +60,16 @@ export default function build({ hud }) {
   sq.rotation.x = -Math.PI / 2; sq.position.y = 0.002; scene.add(sq);
   const edge = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.PlaneGeometry(0.1, 0.1)), new THREE.LineBasicMaterial({ color: new THREE.Color(P.red) }));
   edge.rotation.x = -Math.PI / 2; edge.position.y = 0.003; scene.add(edge);
+  // a football pitch for scale (105 m x 68 m)
+  const fp = []; const hx = 0.0475, hz = 0.031;
+  const seg = (a, b, c, d) => fp.push(a, 0.004, b, c, 0.004, d);
+  seg(-hx, -hz, hx, -hz); seg(hx, -hz, hx, hz); seg(hx, hz, -hx, hz); seg(-hx, hz, -hx, -hz); seg(0, -hz, 0, hz);
+  for (let i = 0; i < 32; i++) { const a0 = i / 32 * Math.PI * 2, a1 = (i + 1) / 32 * Math.PI * 2; seg(Math.cos(a0) * 0.009, Math.sin(a0) * 0.009, Math.cos(a1) * 0.009, Math.sin(a1) * 0.009); }
+  seg(-hx, -0.02, -hx + 0.0165, -0.02); seg(-hx + 0.0165, -0.02, -hx + 0.0165, 0.02); seg(-hx + 0.0165, 0.02, -hx, 0.02);
+  seg(hx, -0.02, hx - 0.0165, -0.02); seg(hx - 0.0165, -0.02, hx - 0.0165, 0.02); seg(hx - 0.0165, 0.02, hx, 0.02);
+  const fg = new THREE.BufferGeometry(); fg.setAttribute('position', new THREE.Float32BufferAttribute(fp, 3));
+  const pitch = new THREE.LineSegments(fg, new THREE.LineBasicMaterial({ color: new THREE.Color('#23201c'), transparent: true })); scene.add(pitch);
+  const pitchL = el('div', 'lbl', hud, '≈ ONE FOOTBALL FIELD'); pitchL.style.fontSize = '22px';
   const dot = el('div', '', hud); Object.assign(dot.style, { position: 'absolute', width: '22px', height: '22px', borderRadius: '50%', background: P.red, boxShadow: '0 0 0 6px rgba(194,58,44,.25)' });
   const big = el('div', 'big-num', hud, ''); big.style.fontSize = '88px';
   const unit = el('div', 'lbl', hud, 'SQUARES, 100 M WIDE'); unit.style.fontSize = '22px';
@@ -87,6 +97,8 @@ export default function build({ hud }) {
       const q = project(new THREE.Vector3(0.05, 0, -0.05), camera);
       place(dim, q.x + 16, q.y, 0, 0.5); dim.style.opacity = ramp(t, 130.6, 131.0) * (1 - ramp(t, 132.6, 132.9)) + ramp(t, 137.3, 137.7);
       sq.material.opacity = 0.25 + 0.2 * Math.sin(t * 5) * ramp(t, 136.5, 137);
+      const pa = ramp(t, 131.2, 131.6) * (1 - ramp(t, 132.6, 132.9)); pitch.material.opacity = pa;
+      const pq = project(new THREE.Vector3(0, 0, 0.05), camera); place(pitchL, pq.x, pq.y + 24, 0.5, 0); pitchL.style.opacity = pa;
     },
   };
 }

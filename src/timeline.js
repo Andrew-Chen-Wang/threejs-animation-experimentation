@@ -21,8 +21,8 @@ import { sky, globe, finale } from './scenes/outro.js';
 const D = (dur = 0.6) => ({ dur, type: 'dissolve' });
 const SL = (dur = 0.7) => ({ dur, type: 'slide' });
 export const SCENES = [
-  { name: 'intro', start: 0, end: 9.0, build: intro },
-  { name: 'america', start: 9.0, end: 14.9, build: america, trans: D(0.7) },
+  { name: 'intro', start: 0, end: 4.6, build: intro },
+  { name: 'america', start: 4.6, end: 14.9, build: america, trans: D(0.6) },
   { name: 'pole', start: 14.9, end: 18.6, build: pole, trans: D(0.5) },
   { name: 'cctv', start: 18.6, end: 36.4, build: cctv, trans: D(0.5) },
   { name: 'doppler', start: 36.4, end: 52.9, build: doppler, trans: D(0.6) },

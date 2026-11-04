@@ -26,6 +26,9 @@ export default function build({ hud }) {
   const sightLn = svgEl('line', { stroke: P.ink, 'stroke-width': 2.5, 'stroke-dasharray': '3 7' }, svg);
   const wasL = el('div', 'lbl', hud, 'WHERE IT WAS<br/><span style="font-size:16px;color:#8a8378">WHAT YOU HEAR</span>'); wasL.style.textAlign = 'center'; wasL.style.fontSize = '21px';
   const isL = el('div', 'lbl red', hud, 'WHERE IT IS'); isL.style.fontSize = '21px';
+  const lagL = el('div', 'lbl', hud, 'SOUND IS ~2 S LATE'); lagL.style.fontSize = '20px';
+  const movedL = el('div', 'lbl red', hud, 'MOVED ~100 M'); movedL.style.fontSize = '20px';
+  const moved = svgEl('path', { stroke: P.red, 'stroke-width': 4, fill: 'none' }, svg);
   const chart = new ChartCard(hud, { x: 60, y: 1000, w: 960, h: 260, title: 'PREDICTED vs HEARD', right: '', pad: [64, 220, 34, 40] });
   const xd = [104, 113], yd = [0.6, 1.6];
   const X = el('div', 'stamp', hud, 'NO MATCH'); X.style.fontSize = '30px';
@@ -55,6 +58,9 @@ export default function build({ hud }) {
       sightLn.setAttribute('x1', p.x); sightLn.setAttribute('y1', p.y); sightLn.setAttribute('x2', y.x); sightLn.setAttribute('y2', y.y); sightLn.style.opacity = ramp(t, 108.4, 108.9);
       place(wasL, q.x, q.y - 70, 0.5, 1); wasL.style.opacity = ga;
       place(isL, p.x, p.y - 70, 0.5, 1); isL.style.opacity = ramp(t, 108.4, 108.9);
+      place(lagL, (q.x + y.x) / 2 + 16, (q.y + y.y) / 2, 0, 0.5); lagL.style.opacity = ramp(t, 106.9, 107.3) * (1 - ramp(t, 110.1, 110.4));
+      const my = Math.max(p.y, q.y) + 70; moved.setAttribute('d', `M${q.x} ${my - 12} L${q.x} ${my} L${p.x} ${my} L${p.x} ${my - 12}`);
+      moved.style.opacity = ramp(t, 108.9, 109.3); place(movedL, (p.x + q.x) / 2, my + 10, 0.5, 0); movedL.style.opacity = moved.style.opacity;
       // chart
       const show = ramp(t, 110.2, 110.7);
       chart.opacity = show;

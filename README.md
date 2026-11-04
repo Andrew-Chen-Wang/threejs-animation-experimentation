@@ -65,4 +65,5 @@ hardware GL. The default is SwiftShader, at about 0.25 s per frame at 540p.
 
 The location, coordinates, scores, and tail numbers are illustrative.
 
-See [docs/PROCESS.md](docs/PROCESS.md) for how it was made, the iteration log, and the learnings.
+See [docs/DESIGN.md](docs/DESIGN.md) for why each scene is designed the way it is (the explanation-first redesign),
+and [docs/PROCESS.md](docs/PROCESS.md) for how it was built, the iteration log, and the learnings.

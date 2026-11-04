@@ -1,54 +1,62 @@
+// CHAPTER 4 · THE PROOF (part 2): lay every predicted line over the real ones.
+// Real lines keep their plane colours; predictions are thin ink; the one that fits turns red.
+// The score bar answers "compared to what?": first place against second place.
 import * as THREE from 'three';
-import { buildFeed, FEED } from '../lib/feed.js';
-import { spectroPanel, lineF } from '../lib/spectro.js';
+import { lineF } from '../lib/spectro.js';
 import { P } from '../lib/palette.js';
-import { sr, ramp, ease, el, place, project, lerp, rng, fmt } from '../lib/util.js';
+import { sr, ramp, ease, el, place, lerp, rng, svgEl, pathD, partial } from '../lib/util.js';
 
 export default function build({ hud }) {
-  const F = buildFeed(hud, { seed: 1 });
-  const { scene, camera } = F;
-  const A = F.spec; A.visible = true;
-  const gp = A.geometry.parameters;
-  // split the sky into two strips: plane 1 (top) and plane 2 (bottom)
-  A.scale.y = 0.5; const y0 = A.position.y;
-  A.position.y = y0 + gp.height * 0.25;
-  const B = spectroPanel(gp.width, gp.height * 0.5); B.position.copy(A.position); B.position.y = y0 - gp.height * 0.25; camera.add(B);
-  const a = A.userData, b = B.userData;
-  a.h = gp.height * 0.5;
-  const L1 = [12, 2.0, 5, 95], L2 = [930, 1.5, 8, 102];
-  a.setWin(0, 24, 60, 135); b.setWin(918, 942, 60, 135);
-  a.setLine(0, L1, 0.9, 0.3); b.setLine(0, L2, 1.6, 0.4);
-  a.u.uNoise.value = b.u.uNoise.value = 0.5;
+  const scene = new THREE.Scene(); scene.background = new THREE.Color(P.paper);
+  const camera = new THREE.PerspectiveCamera(30, 9 / 16, 0.1, 10);
+  const R1 = [0, 2.0, 5, 95], R2 = [0, 1.5, 8, 102];
   const r = rng(9);
-  const cands = Array.from({ length: 8 }, (_, i) => ({ d: [(r() - 0.5) * 7, (r() - 0.5) * 2, (r() - 0.5) * 6, (r() - 0.5) * 22], d2: [(r() - 0.5) * 7, (r() - 0.5) * 1.6, (r() - 0.5) * 8, (r() - 0.5) * 22] }));
-  cands[0].d = [0, 0, 0, 0]; cands[0].d2 = [0, 0, 0, 0];
-  const l1 = el('div', 'lbl light', hud, 'PLANE 1'); place(l1, 60, FEED.top + 26); l1.style.fontSize = '20px';
-  const l2 = el('div', 'lbl light', hud, 'PLANE 2 &nbsp;·&nbsp; 920 S LATER'); l2.style.fontSize = '20px';
-  const board = el('div', 'card', hud); Object.assign(board.style, { width: '700px', padding: '24px 30px', fontFamily: 'IBM Plex Mono', color: P.ink });
-  board.innerHTML = `<div style="font-size:17px;font-weight:600;letter-spacing:3px;color:#6d665a;margin-bottom:12px">MATCH SCORE</div>
-   <div style="display:flex;justify-content:space-between;font-size:30px;font-weight:600;color:#c23a2c"><span>1ST &nbsp;38.47 N 96.92 W</span><span>20.4</span></div>
-   <div class="second" style="display:flex;justify-content:space-between;font-size:30px;font-weight:500;color:#8a8378;margin-top:6px"><span>2ND &nbsp;35.11 N 89.98 W</span><span>3.1</span></div>`;
-  const second = board.querySelector('.second');
+  const cands = Array.from({ length: 14 }, (_, i) => ({ d1: [(r() - 0.5) * 3, (r() - 0.5) * 1.8, (r() - 0.5) * 6, (r() - 0.5) * 16], d2: [(r() - 0.5) * 3, (r() - 0.5) * 1.4, (r() - 0.5) * 8, (r() - 0.5) * 16] }));
+  cands[0].d1 = [0, 0, 0, 0]; cands[0].d2 = [0, 0, 0, 0];
+  const mk = (y, title, col) => {
+    const card = el('div', 'card', hud); Object.assign(card.style, { left: '60px', top: y + 'px', width: '960px', height: '380px' });
+    const s = svgEl('svg', { width: 960, height: 380, style: 'position:absolute;inset:0;overflow:visible' }, card);
+    svgEl('text', { x: 26, y: 40, 'font-family': 'IBM Plex Mono', 'font-size': 20, 'font-weight': 600, 'letter-spacing': 3, fill: col }, s).textContent = title;
+    svgEl('text', { x: 934, y: 40, 'text-anchor': 'end', 'font-family': 'IBM Plex Mono', 'font-size': 16, 'font-weight': 600, 'letter-spacing': 2, fill: '#8a8378' }, s).textContent = 'PITCH ↑  TIME →';
+    const real = svgEl('path', { fill: 'none', stroke: col, 'stroke-width': 14, 'stroke-linecap': 'round', opacity: 0.85 }, s);
+    const preds = cands.map(() => svgEl('path', { fill: 'none', stroke: P.ink, 'stroke-width': 2.5, opacity: 0 }, s));
+    const tag = svgEl('text', { 'font-family': 'IBM Plex Mono', 'font-size': 20, 'font-weight': 600, 'letter-spacing': 2, fill: P.red }, s);
+    return { card, s, real, preds, tag };
+  };
+  const A = mk(150, 'PLANE 1 · HEARD ON THE CLIP', P.p1), B = mk(560, 'PLANE 2 · HEARD 920 S LATER', P.p2);
+  const legend = el('div', 'lbl', hud, '<span style="color:#2f6690">▬ HEARD</span> &nbsp;&nbsp; <span style="color:#23201c">— PREDICTED FOR ONE SPOT</span>'); legend.style.fontSize = '18px'; place(legend, 540, 112, 0.5, 0.5);
+  const board = el('div', 'card', hud); Object.assign(board.style, { left: '60px', top: '975px', width: '960px', height: '250px' });
+  const bs = svgEl('svg', { width: 960, height: 250, style: 'position:absolute;inset:0' }, board);
+  svgEl('text', { x: 26, y: 40, 'font-family': 'IBM Plex Mono', 'font-size': 18, 'font-weight': 600, 'letter-spacing': 3, fill: '#4a453d' }, bs).textContent = 'HOW WELL EACH SPOT FITS';
+  const bar1 = svgEl('rect', { x: 260, y: 74, height: 54, rx: 4, fill: P.red }, bs), bar2 = svgEl('rect', { x: 260, y: 152, height: 54, rx: 4, fill: '#b5ac9b' }, bs);
+  const t1 = svgEl('text', { x: 26, y: 110, 'font-family': 'IBM Plex Mono', 'font-size': 22, 'font-weight': 600, fill: P.red, 'letter-spacing': 2 }, bs); t1.textContent = 'BEST SPOT';
+  const t2 = svgEl('text', { x: 26, y: 188, 'font-family': 'IBM Plex Mono', 'font-size': 22, 'font-weight': 600, fill: '#6d665a', 'letter-spacing': 2 }, bs); t2.textContent = 'NEXT BEST';
+  const v1 = svgEl('text', { y: 110, 'font-family': 'IBM Plex Mono', 'font-size': 22, 'font-weight': 600, fill: P.red }, bs), v2 = svgEl('text', { y: 188, 'font-family': 'IBM Plex Mono', 'font-size': 22, 'font-weight': 600, fill: '#6d665a' }, bs);
+  const curve = (L, dx, wob) => { const pts = []; for (let i = 0; i <= 120; i++) { const tt = -8 + i * 16 / 120; pts.push([60 + (tt + 8) / 16 * 840, 330 - (lineF(L, wob, tt) - 80) / 34 * 250]); } return pts; };
   return {
-    scene, camera, caption: { y: 1330 },
+    scene, camera, caption: { y: 1400 },
     update(t) {
-      F.sway(t); F.setClock(t - 112.9 + 260);
-      F.clouds.forEach((c) => (c.visible = false));
-      place(l2, 60, FEED.top + (FEED.horizon - FEED.top) / 2 + 26 * 0 + 14);
-      cands.forEach((c, i) => {
-        const appear = ramp(t, 113.3 + i * 0.12, 113.6 + i * 0.12);
-        const conv = sr(t, 115.3, 116.9, ease.inOut);
-        const keep = i === 0 ? 1 : 1 - sr(t, 116.3, 116.9);
-        const k = i === 0 ? 1 - conv : 1 - conv * 0.15;
-        const wob = Math.sin(t * 2 + i) * (1 - conv) * 0.6;
-        a.setRed(i, L1.map((v, j) => v + c.d[j] * k + (j === 3 ? wob * 3 : 0)), appear * keep * (i === 0 ? 1 : 0.85), 0.3);
-        b.setRed(i, L2.map((v, j) => v + c.d2[j] * k + (j === 3 ? wob * 3 : 0)), appear * keep * (i === 0 ? 1 : 0.85), 0.4);
+      [[A, R1, 'd1', 0.3], [B, R2, 'd2', 0.4]].forEach(([C, R, key, wob], ci) => {
+        C.real.setAttribute('d', pathD(curve(R, 0, wob)));
+        const conv = sr(t, 116.3, 117.0, ease.inOut);
+        cands.forEach((c, i) => {
+          const app = ramp(t, 113.3 + i * 0.12, 113.6 + i * 0.12);
+          const L = R.map((v, j) => v + c[key][j]);
+          const pts = curve(L, 0, wob);
+          const p = C.preds[i];
+          p.setAttribute('d', pathD(partial(pts, sr(t, 113.3 + i * 0.12, 114.1 + i * 0.12))));
+          if (i === 0) { p.setAttribute('stroke', conv > 0 ? P.red : P.ink); p.setAttribute('stroke-width', lerp(2.5, 5, conv)); p.setAttribute('stroke-dasharray', conv > 0 ? '14 10' : ''); p.style.opacity = app; }
+          else p.style.opacity = app * 0.45 * (1 - conv * 0.85);
+        });
+        C.tag.textContent = 'BEST SPOT: EXACT FIT'; C.tag.setAttribute('x', 600); C.tag.setAttribute('y', 80); C.tag.style.opacity = ramp(t, 116.8, 117.2);
+        C.card.style.opacity = ramp(t, 112.9 + ci * 0.2, 113.3 + ci * 0.2);
       });
-      a.u.uRW.value = b.u.uRW.value = lerp(1.6, 3.2, sr(t, 116.4, 117));
-      place(board, 540, 980, 0.5, 0.5, `scale(${lerp(0.9, 1, ease.back(ramp(t, 116.4, 116.9)))})`);
-      board.style.opacity = ramp(t, 116.4, 116.8);
-      second.style.opacity = ramp(t, 118.9, 119.3);
-      second.style.color = t > 119.6 ? '#b0a898' : '#8a8378';
+      legend.style.opacity = ramp(t, 113.2, 113.6);
+      const b1 = sr(t, 116.9, 117.7, ease.out) * 600, b2 = sr(t, 119.0, 119.5, ease.out) * 600 * (3.1 / 20.4);
+      bar1.setAttribute('width', b1); bar2.setAttribute('width', b2);
+      v1.setAttribute('x', 260 + b1 + 14); v1.textContent = b1 > 1 ? '20.4' : ''; v2.setAttribute('x', 260 + b2 + 14); v2.textContent = b2 > 1 ? '3.1' : '';
+      board.style.opacity = ramp(t, 116.6, 117.0);
+      t2.style.opacity = ramp(t, 118.9, 119.2);
     },
   };
 }

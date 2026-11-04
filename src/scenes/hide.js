@@ -5,12 +5,13 @@ import { lineF } from '../lib/spectro.js';
 import { P } from '../lib/palette.js';
 import { sr, ramp, ease, el, place, project, lerp, svgEl, pathD } from '../lib/util.js';
 
+const cut01 = (t) => sr(t, 145.5, 146.3, ease.inOut);
 export default function build({ hud }) {
   const { scene, camera } = buildDesk();
   const card = photoCard(6.4, 5.2); card.position.set(0, 0, -2.2); card.rotation.y = 0.03; scene.add(card);
   const spec = card.userData.spec, S = spec.userData;
   const L = [15, 2.2, 6, 100];
-  S.setWin(0, 30, 20, 170); S.setLine(0, L, 1.0, 0.4); S.u.uNoise.value = 0.5;
+  S.setWin(0, 30, 20, 340); S.setLine(0, L, 1.3, 0.4, P.p1Glow); S.u.uNoise.value = 0.5; S.u.uHarm.value = 0.45;
   // fader
   const rail = mesh(new THREE.BoxGeometry(4.2, 0.08, 0.18), lam('#3b3732')); rail.position.set(-1.2, 0.04, 2.6); scene.add(rail);
   const fader = mesh(new THREE.BoxGeometry(0.4, 0.35, 0.7), lam('#efeae0'), { outline: 0.015 }); fader.position.set(-3.1, 0.18, 2.6); scene.add(fader);
@@ -30,6 +31,9 @@ export default function build({ hud }) {
   const svg = svgEl('svg', { width: 1080, height: 1920, style: 'position:absolute;inset:0;overflow:visible' }, hud);
   const trace = svgEl('path', { fill: 'none', stroke: P.red, 'stroke-width': 7, 'stroke-linecap': 'round' }, svg);
   const cardLbl = el('div', 'lbl', hud, 'THE CLIP &nbsp;·&nbsp; LOW NOTES'); cardLbl.style.fontSize = '18px';
+  const cutPoly = svgEl('polygon', { fill: 'rgba(194,58,44,0.18)', stroke: P.red, 'stroke-width': 3, 'stroke-dasharray': '8 6' }, svg);
+  const cutL = el('div', 'lbl red', hud, 'REMOVED'); cutL.style.fontSize = '22px';
+  const harmL = el('div', 'lbl', hud, 'FAINT COPIES OF THE LINE, HIGHER UP'); harmL.style.fontSize = '19px'; harmL.style.color = '#f3eee4'; harmL.style.background = 'rgba(20,19,17,.75)'; harmL.style.padding = '4px 8px';
   return {
     scene, camera, caption: { y: 1430 },
     update(t) {
@@ -49,9 +53,14 @@ export default function build({ hud }) {
       const cp = project(new THREE.Vector3(1.6, 0.1, -3.9), camera);
       place(stamp, cp.x, cp.y, 0.5, 0.5, `rotate(-12deg) scale(${lerp(2.2, 1, ease.out(st))})`); stamp.style.opacity = st;
       const head = project(new THREE.Vector3(-2.9, 0.05, 0.2), camera); place(cardLbl, head.x, head.y, 0, 0.5);
-      // trace the recovered line
+      const W = S.u.uWin.value; const corner = (tt, ff) => { const v = S.toLocal(tt, ff); const w = spec.localToWorld(v); const p = project(w, camera); return `${p.x},${p.y}`; };
+      cutPoly.setAttribute('points', [corner(W.x, 20), corner(W.y, 20), corner(W.y, 135 * cut01(t)), corner(W.x, 135 * cut01(t))].join(' '));
+      cutPoly.style.opacity = ramp(t, 145.5, 145.7) * (1 - ramp(t, 148.4, 148.7));
+      const cl = project(spec.localToWorld(S.toLocal(26, 70)), camera); place(cutL, cl.x, cl.y, 0.5, 0.5); cutL.style.opacity = ramp(t, 146.2, 146.5) * (1 - ramp(t, 148.4, 148.7));
+      const hp = project(spec.localToWorld(S.toLocal(15, 2 * lineF(L, 0.4, 15) + 34)), camera); place(harmL, hp.x, hp.y, 0.5, 1); harmL.style.opacity = ramp(t, 150.0, 150.4);
+      // trace the recovered line (the 2nd harmonic: same curve, twice the pitch)
       const tr = sr(t, 149.9, 150.9);
-      const pts = []; for (let i = 0; i <= 80; i++) { const ts = 4 + i * 22 / 80; const v = S.toLocal(ts, lineF(L, 0.4, ts)); const w = spec.localToWorld(v); const p = project(w, camera); pts.push([p.x, p.y]); }
+      const pts = []; for (let i = 0; i <= 80; i++) { const ts = 4 + i * 22 / 80; const v = S.toLocal(ts, 2 * lineF(L, 0.4, ts)); const w = spec.localToWorld(v); const p = project(w, camera); pts.push([p.x, p.y]); }
       const n = Math.max(1, Math.floor(pts.length * tr)); trace.setAttribute('d', tr > 0 ? pathD(pts.slice(0, n)) : '');
     },
   };

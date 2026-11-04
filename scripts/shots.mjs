@@ -14,7 +14,7 @@ await page.waitForFunction(() => window.__ready, null, { timeout: 120000 });
 await page.evaluate(() => window.__ready);
 for (const t of times) {
   await page.evaluate((t) => window.__frame(+t), t);
-  await page.screenshot({ path: `${out}/s_${String(t).padStart(6, '0')}.png`, clip: { x: 0, y: 0, width: w, height: Math.round(w * 16 / 9) } });
+  await page.screenshot({ path: `${out}/s_${t}.png`, clip: { x: 0, y: 0, width: w, height: Math.round(w * 16 / 9) } });
 }
 console.log(errs.slice(0, 20).join('\n'));
 await browser.close();

@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { Post } from './lib/post.js';
 import { Captions, END_TIME } from './captions.js';
+import { CaseFile } from './lib/casefile.js';
+import { ASSETS } from './lib/assets.js';
 import { SCENES } from './timeline.js';
 import { clamp, el, ease } from './lib/util.js';
 
@@ -37,6 +39,7 @@ window.addEventListener('resize', resize); resize();
 
 const ctx = { renderer, hudRoot };
 const captions = new Captions(document.getElementById('captions'));
+const caseFile = new CaseFile(document.getElementById('frame'));
 
 let scenes = [];
 function buildScenes() { scenes = SCENES.map((def, i) => {
@@ -77,6 +80,27 @@ function renderAt(t) {
   post.render(a, b, mix, type, Math.floor(t * 24) % 1000);
   const capScene = b && mix > 0.5 ? b : a;
   captions.update(t, capScene.caption || {});
+  caseFile.update(t);
+}
+
+/** render the CCTV feed once and keep it as an image: "the clip" used as a photo elsewhere */
+function snapshotClip() {
+  const s = scenes.find((x) => x.name === 'cctv'); if (!s) return null;
+  const w = 540, h = 960;
+  const rt = new THREE.WebGLRenderTarget(w, h, { type: THREE.UnsignedByteType, colorSpace: THREE.SRGBColorSpace });
+  s.update(20.5);
+  renderer.setRenderTarget(rt); renderer.render(s.scene, s.camera); renderer.setRenderTarget(null);
+  const px = new Uint8Array(w * h * 4); renderer.readRenderTargetPixels(rt, 0, 0, w, h, px); rt.dispose();
+  // crop the feed window (frame px 230..1126) and flip vertically
+  const y0 = Math.round(230 / 1920 * h), y1 = Math.round(1126 / 1920 * h), ch = y1 - y0;
+  const cv = document.createElement('canvas'); cv.width = w; cv.height = ch; const g = cv.getContext('2d');
+  const img = g.createImageData(w, ch);
+  for (let y = 0; y < ch; y++) { const src = (h - 1 - (y0 + y)) * w * 4; img.data.set(px.subarray(src, src + w * 4), y * w * 4); }
+  g.putImageData(img, 0, 0);
+  g.fillStyle = 'rgba(20,19,17,0.85)'; g.fillRect(0, 0, w, 34);
+  g.fillStyle = '#efe9dd'; g.font = "500 16px 'IBM Plex Mono'"; g.fillText('CAM 01 · 08 SEP 2026', 12, 23);
+  g.fillStyle = '#e0402e'; g.fillText('● REC', w - 76, 23);
+  return cv.toDataURL('image/jpeg', 0.9);
 }
 
 // ---------- playback ----------
@@ -135,6 +159,7 @@ const ready = (async () => {
   buildScenes();
   // compile all shaders up-front so playback doesn't hitch
   for (const s of scenes) { s.update(s.start + 0.01); renderer.compile(s.scene, s.camera); }
+  ASSETS.clip = snapshotClip();
   if (!RENDER) await probeAudio();
 })();
 

@@ -13,11 +13,11 @@ export default function build({ hud }) {
   const bg = new THREE.ExtrudeGeometry(sh, { depth: 0.2, bevelEnabled: true, bevelThickness: 0.04, bevelSize: 0.04, bevelSegments: 3, curveSegments: 10 }); bg.rotateX(-Math.PI / 2);
   const body = mesh(bg, lam('#24221f')); body.position.y = 0.02; phone.add(body);
   const spec = spectroPanel(3.0, 3.0); spec.rotation.x = -Math.PI / 2; spec.position.set(0, 0.285, -0.2); phone.add(spec);
-  const S = spec.userData; S.setWin(0, 20, 30, 170); S.setLine(0, [10, 1.8, 7, 100], 1.4, 0.4); S.u.uNoise.value = 0.55; S.u.uMp3.value = 0.6;
+  const S = spec.userData; S.setWin(0, 20, 0, 900); S.setLine(0, [10, 1.8, 12, 130], 2.2, 0.4, P.p1Glow); S.u.uNoise.value = 0.55; S.u.uMp3.value = 0.4; S.u.uBand.value = 1; S.u.uHarm.value = 1.4;
   const scr = new THREE.Mesh(new THREE.PlaneGeometry(3.05, 6.3), new THREE.MeshBasicMaterial({ color: new THREE.Color('#ece7dc') })); scr.rotation.x = -Math.PI / 2; scr.position.y = 0.283; phone.add(scr);
   const hang = new THREE.Mesh(new THREE.CircleGeometry(0.42, 40), new THREE.MeshBasicMaterial({ color: new THREE.Color(P.red) })); hang.rotation.x = -Math.PI / 2; hang.position.set(0, 0.29, 2.4); phone.add(hang);
   const call = el('div', 'lbl', hud, ''); call.style.fontSize = '30px'; call.style.textAlign = 'center';
-  const ln = el('div', 'lbl', hud, 'THE LINE SURVIVES A PHONE CALL'); ln.style.fontSize = '16px';
+  const ln = el('div', 'lbl', hud, 'PHONES DROP EVERYTHING BELOW 300 HZ.<br/>THE HIGHER COPIES GET THROUGH.'); ln.style.fontSize = '16px'; ln.style.textAlign = 'center'; ln.style.lineHeight = '1.5';
   return {
     scene, camera, caption: { y: 1430 },
     update(t) {
@@ -29,7 +29,7 @@ export default function build({ hud }) {
       call.innerHTML = `CALL<br/><span style="font-size:22px">0:${String(sec).padStart(2, '0')}</span>`;
       const cp = project(phone.localToWorld(new THREE.Vector3(0, 0.3, -2.75)), camera); place(call, cp.x, cp.y, 0.5, 0.5);
       const lp = project(phone.localToWorld(new THREE.Vector3(0, 0.3, 1.65)), camera); place(ln, lp.x, lp.y, 0.5, 0.5);
-      S.setWin(t - 166, t - 146, 30, 170);
+      S.setWin(t - 166, t - 146, 0, 900);
     },
   };
 }
