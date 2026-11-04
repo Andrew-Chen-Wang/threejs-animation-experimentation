@@ -23,7 +23,7 @@ function resize() {
   let cssW, cssH;
   if (RENDER) { cssW = +(params.get('w') || 1080); cssH = Math.round(cssW * 16 / 9); }
   else {
-    const availH = window.innerHeight - 56, availW = window.innerWidth - 16;
+    const availH = window.innerHeight - 64, availW = window.innerWidth - 32;
     cssH = Math.min(availH, availW * 16 / 9); cssW = cssH * 9 / 16;
   }
   stage.style.width = cssW + 'px'; stage.style.height = cssH + 'px';
@@ -107,6 +107,16 @@ window.addEventListener('keydown', (e) => {
   if (e.code === 'ArrowLeft') setTime(curTime() - (e.shiftKey ? 10 : 2));
 });
 audio.addEventListener('ended', () => { pause(); });
+const fileIn = document.getElementById('audio-file');
+const noteEl = () => document.getElementById('gate-note');
+fileIn.addEventListener('change', () => {
+  const f = fileIn.files && fileIn.files[0]; if (!f) return;
+  const wasPlaying = playing; if (playing) pause();
+  audio.src = URL.createObjectURL(f); hasAudio = true;
+  audio.currentTime = clockT;
+  if (noteEl()) noteEl().textContent = `Narration loaded: ${f.name}`;
+  if (wasPlaying) play();
+});
 
 function loop(now) {
   if (playing && !hasAudio) { clockT += (now - lastNow) / 1000; if (clockT >= END_TIME) { clockT = END_TIME; pause(); } }
@@ -136,7 +146,7 @@ if (RENDER) {
   ready.then(() => {
     const gate = document.getElementById('gate');
     document.getElementById('gate-note').innerHTML = hasAudio ? 'Narration loaded. Space = play/pause, ←/→ = seek.'
-      : 'No narration file found in <b>public/audio/</b> — running silent with captions.<br/>Run <b>npm run fetch-audio</b> to add the voice-over.';
+      : 'Plays silently with captions. Load the reel\'s audio (or video) file above to hear the narration in sync.';
     document.getElementById('gate-play').onclick = () => { gate.style.display = 'none'; play(); };
     if (params.has('t')) setTime(clockT);
     requestAnimationFrame(loop);

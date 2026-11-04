@@ -22,12 +22,15 @@
     <button id="play" aria-label="Play/Pause">Play</button>
     <input id="scrub" type="range" min="0" max="178.8" step="0.01" value="0" />
     <span id="clock">0:00.0</span>
+    <label for="audio-file" class="ctl-load" title="Load narration audio">♪</label>
   </div>
   <div id="gate">
     <div class="gate-card">
       <div class="gate-kicker">A THREE.JS EXPLAINER</div>
       <div class="gate-title">The Sound<br/>That Finds You</div>
       <button id="gate-play">&#9654;&nbsp; Play</button>
+      <label class="gate-load" for="audio-file">Load narration audio…</label>
+      <input id="audio-file" type="file" accept="audio/*,video/*" hidden />
       <div id="gate-note" class="gate-note"></div>
     </div>
   </div>
