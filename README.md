@@ -9,11 +9,21 @@ The visuals here are new, not a frame-by-frame copy. They keep the reference's l
 grey illustration, one red accent, bold serif captions with a red key word, and mono HUD labels.
 Each beat was re-staged as its own 3D scene.
 
+## Published experiments
+
+- [Opus 5.5 animation](https://andrew-chen-wang.github.io/threejs-animation-experimentation/) — the original project in this repository.
+- [Codex 6 Astra Low animation](https://andrew-chen-wang.github.io/threejs-animation-experimentation/codex-6-astra-low/) — a separate experiment with its own [rendered finale](https://andrew-chen-wang.github.io/threejs-animation-experimentation/codex-6-astra-low/watch.html) and [learnings](codex-6-astra-low/README.md).
+
+It seemed like **Opus 5.5 did a better job overall**, as a qualitative assessment of these experiments. The Codex notes cover the successive corrections around explanation, sustained motion, and the 3D pencil-drawn style.
+
+The original script is pretty bad at explaining where the airplane positions come from. The missing bridge is time-stamped aircraft tracking data (for example, ADS-B observations): known flight paths let you predict what different locations would hear and compare that with the video's audio. The [Codex README](codex-6-astra-low/README.md#assessment) expands on that limitation.
+
+Original Instagram reel: https://www.instagram.com/reel/DfSsHlYtpNc/
+
 ## Watch it
 
 [`renders/the-sound-that-finds-you-540p.mp4`](renders/the-sound-that-finds-you-540p.mp4) is a 540×960, 30 fps render of the
-redesigned version. It's silent: the narration belongs to the reel's creator and isn't redistributed
-here. Run the project with your own copy of the audio to hear it in sync.
+redesigned version. That existing MP4 is silent. The deployed interactive players use the reel soundtrack included with the Codex experiment, with the original reel linked for attribution.
 
 ## Run it
 
@@ -92,3 +102,7 @@ The location, coordinates, scores, and tail numbers are illustrative.
 - [docs/DESIGN.md](docs/DESIGN.md): why each scene is designed the way it is (the explanation-first redesign), with sources.
 - [docs/PROCESS.md](docs/PROCESS.md): how it was built, the full iteration log, and the learnings.
 - [docs/PLAYBOOK.md](docs/PLAYBOOK.md): a step-by-step recipe for the next piece in this style.
+
+## GitHub Pages deployment
+
+The Pages workflow builds both projects on pushes to the repository default branch. `scripts/build-pages.mjs` keeps the existing animation at the site root and the Codex experiment under `/codex-6-astra-low/`. The rendered-video player is at `/codex-6-astra-low/watch.html`. Source assets use relative paths so they work under the GitHub project-site URL.

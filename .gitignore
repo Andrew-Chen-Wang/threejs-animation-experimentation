@@ -4,3 +4,5 @@ out/
 .cache/
 public/audio/*
 !public/audio/.gitkeep
+
+_site/

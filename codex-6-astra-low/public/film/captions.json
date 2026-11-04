@@ -1,0 +1,7422 @@
+{
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 2.1399999999999997,
+      "end": 6.32,
+      "text": "A plane you can't even see or hear can give away your exact location.",
+      "tokens": [
+        50365,
+        316,
+        5720,
+        291,
+        393,
+        380,
+        754,
+        536,
+        420,
+        1568,
+        393,
+        976,
+        1314,
+        428,
+        1900,
+        4914,
+        13,
+        50683
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " A",
+          "start": 2.1399999999999997,
+          "end": 2.7,
+          "probability": 0.947265625
+        },
+        {
+          "word": " plane",
+          "start": 2.7,
+          "end": 2.94,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " you",
+          "start": 2.94,
+          "end": 3.1,
+          "probability": 0.98876953125
+        },
+        {
+          "word": " can't",
+          "start": 3.1,
+          "end": 3.36,
+          "probability": 0.998046875
+        },
+        {
+          "word": " even",
+          "start": 3.36,
+          "end": 3.5,
+          "probability": 0.994140625
+        },
+        {
+          "word": " see",
+          "start": 3.5,
+          "end": 3.74,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " or",
+          "start": 3.74,
+          "end": 3.92,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " hear",
+          "start": 3.92,
+          "end": 4.16,
+          "probability": 0.998046875
+        },
+        {
+          "word": " can",
+          "start": 4.16,
+          "end": 4.66,
+          "probability": 0.921875
+        },
+        {
+          "word": " give",
+          "start": 4.66,
+          "end": 4.86,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " away",
+          "start": 4.86,
+          "end": 5.08,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " your",
+          "start": 5.08,
+          "end": 5.28,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " exact",
+          "start": 5.28,
+          "end": 5.68,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " location.",
+          "start": 5.68,
+          "end": 6.32,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 6.92,
+      "end": 8.38,
+      "text": "It's already been done.",
+      "tokens": [
+        50731,
+        467,
+        311,
+        1217,
+        668,
+        1096,
+        13,
+        50785
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " It's",
+          "start": 6.92,
+          "end": 7.48,
+          "probability": 0.99609375
+        },
+        {
+          "word": " already",
+          "start": 7.48,
+          "end": 7.84,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " been",
+          "start": 7.84,
+          "end": 8.12,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " done.",
+          "start": 8.12,
+          "end": 8.38,
+          "probability": 0.9990234375
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 8.74,
+      "end": 12.34,
+      "text": "This security camera could have been anywhere in America.",
+      "tokens": [
+        50821,
+        639,
+        3825,
+        2799,
+        727,
+        362,
+        668,
+        4992,
+        294,
+        3374,
+        13,
+        50982
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " This",
+          "start": 8.74,
+          "end": 9.28,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " security",
+          "start": 9.28,
+          "end": 9.74,
+          "probability": 0.99609375
+        },
+        {
+          "word": " camera",
+          "start": 9.74,
+          "end": 10.26,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " could",
+          "start": 10.26,
+          "end": 10.86,
+          "probability": 0.99072265625
+        },
+        {
+          "word": " have",
+          "start": 10.86,
+          "end": 11.0,
+          "probability": 0.93603515625
+        },
+        {
+          "word": " been",
+          "start": 11.0,
+          "end": 11.16,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " anywhere",
+          "start": 11.16,
+          "end": 11.62,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " in",
+          "start": 11.62,
+          "end": 11.92,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " America.",
+          "start": 11.92,
+          "end": 12.34,
+          "probability": 0.99853515625
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 12.64,
+      "end": 16.86,
+      "text": "With nothing but the date, it was found down to the exact pole it hangs on.",
+      "tokens": [
+        51011,
+        2022,
+        1825,
+        457,
+        264,
+        4002,
+        11,
+        309,
+        390,
+        1352,
+        760,
+        281,
+        264,
+        1900,
+        13208,
+        309,
+        35947,
+        322,
+        13,
+        51209
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " With",
+          "start": 12.64,
+          "end": 13.06,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " nothing",
+          "start": 13.06,
+          "end": 13.32,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " but",
+          "start": 13.32,
+          "end": 13.48,
+          "probability": 0.998046875
+        },
+        {
+          "word": " the",
+          "start": 13.48,
+          "end": 13.6,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " date,",
+          "start": 13.6,
+          "end": 13.96,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " it",
+          "start": 14.1,
+          "end": 14.44,
+          "probability": 0.998046875
+        },
+        {
+          "word": " was",
+          "start": 14.44,
+          "end": 14.58,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " found",
+          "start": 14.58,
+          "end": 14.92,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " down",
+          "start": 14.92,
+          "end": 15.18,
+          "probability": 0.998046875
+        },
+        {
+          "word": " to",
+          "start": 15.18,
+          "end": 15.34,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " the",
+          "start": 15.34,
+          "end": 15.46,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " exact",
+          "start": 15.46,
+          "end": 15.86,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " pole",
+          "start": 15.86,
+          "end": 16.2,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " it",
+          "start": 16.2,
+          "end": 16.38,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " hangs",
+          "start": 16.38,
+          "end": 16.64,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " on.",
+          "start": 16.64,
+          "end": 16.86,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 17.38,
+      "end": 17.88,
+      "text": "Here's how.",
+      "tokens": [
+        51238,
+        1692,
+        311,
+        577,
+        13,
+        51261
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " Here's",
+          "start": 17.38,
+          "end": 17.68,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " how.",
+          "start": 17.68,
+          "end": 17.88,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 18.46,
+      "end": 20.36,
+      "text": "Listen, can you hear a plane?",
+      "tokens": [
+        51303,
+        7501,
+        11,
+        393,
+        291,
+        1568,
+        257,
+        5720,
+        30,
+        51383
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " Listen,",
+          "start": 18.46,
+          "end": 19.02,
+          "probability": 0.99560546875
+        },
+        {
+          "word": " can",
+          "start": 19.36,
+          "end": 19.62,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " you",
+          "start": 19.62,
+          "end": 19.74,
+          "probability": 1.0
+        },
+        {
+          "word": " hear",
+          "start": 19.74,
+          "end": 19.94,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 19.94,
+          "end": 20.08,
+          "probability": 1.0
+        },
+        {
+          "word": " plane?",
+          "start": 20.08,
+          "end": 20.36,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 22.32,
+      "end": 24.02,
+      "text": "Now draw the sound as a picture.",
+      "tokens": [
+        51484,
+        823,
+        2642,
+        264,
+        1626,
+        382,
+        257,
+        3036,
+        13,
+        51566
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " Now",
+          "start": 22.32,
+          "end": 22.88,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " draw",
+          "start": 22.88,
+          "end": 23.1,
+          "probability": 0.95361328125
+        },
+        {
+          "word": " the",
+          "start": 23.1,
+          "end": 23.26,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " sound",
+          "start": 23.26,
+          "end": 23.48,
+          "probability": 1.0
+        },
+        {
+          "word": " as",
+          "start": 23.48,
+          "end": 23.62,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " a",
+          "start": 23.62,
+          "end": 23.7,
+          "probability": 1.0
+        },
+        {
+          "word": " picture.",
+          "start": 23.7,
+          "end": 24.02,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 24.44,
+      "end": 25.9,
+      "text": "Zoom into the low notes.",
+      "tokens": [
+        51602,
+        13453,
+        666,
+        264,
+        2295,
+        5570,
+        13,
+        51661
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " Zoom",
+          "start": 24.44,
+          "end": 24.94,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " into",
+          "start": 24.94,
+          "end": 25.2,
+          "probability": 0.92431640625
+        },
+        {
+          "word": " the",
+          "start": 25.2,
+          "end": 25.34,
+          "probability": 1.0
+        },
+        {
+          "word": " low",
+          "start": 25.34,
+          "end": 25.52,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " notes.",
+          "start": 25.52,
+          "end": 25.9,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 26.18,
+      "end": 29.22,
+      "text": "There, a propeller plane, too quiet to hear.",
+      "tokens": [
+        51684,
+        821,
+        11,
+        257,
+        25577,
+        4658,
+        5720,
+        11,
+        886,
+        5677,
+        281,
+        1568,
+        13,
+        51827
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1607867267644294,
+      "compression_ratio": 1.5435684647302905,
+      "no_speech_prob": 3.4486411122636174e-12,
+      "words": [
+        {
+          "word": " There,",
+          "start": 26.18,
+          "end": 26.54,
+          "probability": 0.9912109375
+        },
+        {
+          "word": " a",
+          "start": 26.96,
+          "end": 27.16,
+          "probability": 1.0
+        },
+        {
+          "word": " propeller",
+          "start": 27.16,
+          "end": 27.56,
+          "probability": 0.9931640625
+        },
+        {
+          "word": " plane,",
+          "start": 27.56,
+          "end": 27.92,
+          "probability": 1.0
+        },
+        {
+          "word": " too",
+          "start": 28.14,
+          "end": 28.46,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " quiet",
+          "start": 28.46,
+          "end": 28.8,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " to",
+          "start": 28.8,
+          "end": 28.98,
+          "probability": 1.0
+        },
+        {
+          "word": " hear.",
+          "start": 28.98,
+          "end": 29.22,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 3000,
+      "start": 30.36,
+      "end": 33.38,
+      "text": "920 seconds later, a second, louder one.",
+      "tokens": [
+        50365,
+        1722,
+        2009,
+        3949,
+        1780,
+        11,
+        257,
+        1150,
+        11,
+        22717,
+        472,
+        13,
+        50535
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " 920",
+          "start": 30.36,
+          "end": 30.92,
+          "probability": 0.93310546875
+        },
+        {
+          "word": " seconds",
+          "start": 30.92,
+          "end": 31.4,
+          "probability": 0.99267578125
+        },
+        {
+          "word": " later,",
+          "start": 31.4,
+          "end": 31.78,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " a",
+          "start": 32.02,
+          "end": 32.16,
+          "probability": 0.994140625
+        },
+        {
+          "word": " second,",
+          "start": 32.16,
+          "end": 32.56,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " louder",
+          "start": 32.72,
+          "end": 33.12,
+          "probability": 0.99462890625
+        },
+        {
+          "word": " one.",
+          "start": 33.12,
+          "end": 33.38,
+          "probability": 0.99609375
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 3000,
+      "start": 33.8,
+      "end": 35.42,
+      "text": "You already know this shape.",
+      "tokens": [
+        50575,
+        509,
+        1217,
+        458,
+        341,
+        3909,
+        13,
+        50638
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " You",
+          "start": 33.8,
+          "end": 34.36,
+          "probability": 0.9892578125
+        },
+        {
+          "word": " already",
+          "start": 34.36,
+          "end": 34.68,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " know",
+          "start": 34.68,
+          "end": 34.92,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " this",
+          "start": 34.92,
+          "end": 35.14,
+          "probability": 0.99609375
+        },
+        {
+          "word": " shape.",
+          "start": 35.14,
+          "end": 35.42,
+          "probability": 0.98974609375
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 3000,
+      "start": 36.68,
+      "end": 39.48,
+      "text": "Coming at you, a sound gets squeezed higher.",
+      "tokens": [
+        50700,
+        12473,
+        412,
+        291,
+        11,
+        257,
+        1626,
+        2170,
+        39470,
+        2946,
+        13,
+        50840
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " Coming",
+          "start": 36.68,
+          "end": 37.24,
+          "probability": 0.98681640625
+        },
+        {
+          "word": " at",
+          "start": 37.24,
+          "end": 37.44,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " you,",
+          "start": 37.44,
+          "end": 37.66,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " a",
+          "start": 37.82,
+          "end": 38.08,
+          "probability": 0.99609375
+        },
+        {
+          "word": " sound",
+          "start": 38.08,
+          "end": 38.44,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " gets",
+          "start": 38.44,
+          "end": 38.66,
+          "probability": 0.98876953125
+        },
+        {
+          "word": " squeezed",
+          "start": 38.66,
+          "end": 39.0,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " higher.",
+          "start": 39.0,
+          "end": 39.48,
+          "probability": 0.99755859375
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 3000,
+      "start": 39.74,
+      "end": 41.64,
+      "text": "Going away, it stretches lower.",
+      "tokens": [
+        50866,
+        10963,
+        1314,
+        11,
+        309,
+        29058,
+        3126,
+        13,
+        50949
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " Going",
+          "start": 39.74,
+          "end": 40.22,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " away,",
+          "start": 40.22,
+          "end": 40.62,
+          "probability": 1.0
+        },
+        {
+          "word": " it",
+          "start": 40.86,
+          "end": 40.94,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " stretches",
+          "start": 40.94,
+          "end": 41.26,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " lower.",
+          "start": 41.26,
+          "end": 41.64,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "seek": 3000,
+      "start": 42.44,
+      "end": 44.52,
+      "text": "The faster it goes, the bigger the drop.",
+      "tokens": [
+        50988,
+        440,
+        4663,
+        309,
+        1709,
+        11,
+        264,
+        3801,
+        264,
+        3270,
+        13,
+        51092
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 42.44,
+          "end": 43.0,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " faster",
+          "start": 43.0,
+          "end": 43.3,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " it",
+          "start": 43.3,
+          "end": 43.46,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " goes,",
+          "start": 43.46,
+          "end": 43.74,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " the",
+          "start": 43.88,
+          "end": 43.92,
+          "probability": 1.0
+        },
+        {
+          "word": " bigger",
+          "start": 43.92,
+          "end": 44.1,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " the",
+          "start": 44.1,
+          "end": 44.24,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " drop.",
+          "start": 44.24,
+          "end": 44.52,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 3000,
+      "start": 45.0,
+      "end": 47.3,
+      "text": "The closer it passes, the sharper the drop.",
+      "tokens": [
+        51126,
+        440,
+        4966,
+        309,
+        11335,
+        11,
+        264,
+        44670,
+        264,
+        3270,
+        13,
+        51232
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 45.0,
+          "end": 45.52,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " closer",
+          "start": 45.52,
+          "end": 45.8,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " it",
+          "start": 45.8,
+          "end": 46.0,
+          "probability": 1.0
+        },
+        {
+          "word": " passes,",
+          "start": 46.0,
+          "end": 46.32,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " the",
+          "start": 46.5,
+          "end": 46.58,
+          "probability": 1.0
+        },
+        {
+          "word": " sharper",
+          "start": 46.58,
+          "end": 46.9,
+          "probability": 1.0
+        },
+        {
+          "word": " the",
+          "start": 46.9,
+          "end": 47.06,
+          "probability": 1.0
+        },
+        {
+          "word": " drop.",
+          "start": 47.06,
+          "end": 47.3,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 3000,
+      "start": 48.44,
+      "end": 52.3,
+      "text": "So the line gives the plane speed and how close it came.",
+      "tokens": [
+        51288,
+        407,
+        264,
+        1622,
+        2709,
+        264,
+        5720,
+        3073,
+        293,
+        577,
+        1998,
+        309,
+        1361,
+        13,
+        51482
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " So",
+          "start": 48.44,
+          "end": 49.0,
+          "probability": 0.998046875
+        },
+        {
+          "word": " the",
+          "start": 49.0,
+          "end": 49.12,
+          "probability": 0.97705078125
+        },
+        {
+          "word": " line",
+          "start": 49.12,
+          "end": 49.4,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " gives",
+          "start": 49.4,
+          "end": 49.62,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " the",
+          "start": 49.62,
+          "end": 49.76,
+          "probability": 1.0
+        },
+        {
+          "word": " plane",
+          "start": 49.76,
+          "end": 50.04,
+          "probability": 0.97314453125
+        },
+        {
+          "word": " speed",
+          "start": 50.04,
+          "end": 50.52,
+          "probability": 0.98193359375
+        },
+        {
+          "word": " and",
+          "start": 50.52,
+          "end": 51.24,
+          "probability": 0.5146484375
+        },
+        {
+          "word": " how",
+          "start": 51.24,
+          "end": 51.5,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " close",
+          "start": 51.5,
+          "end": 51.78,
+          "probability": 1.0
+        },
+        {
+          "word": " it",
+          "start": 51.78,
+          "end": 51.94,
+          "probability": 1.0
+        },
+        {
+          "word": " came.",
+          "start": 51.94,
+          "end": 52.3,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 3000,
+      "start": 52.72,
+      "end": 53.9,
+      "text": "But which plane?",
+      "tokens": [
+        51519,
+        583,
+        597,
+        5720,
+        30,
+        51562
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " But",
+          "start": 52.72,
+          "end": 53.24,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " which",
+          "start": 53.24,
+          "end": 53.5,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " plane?",
+          "start": 53.5,
+          "end": 53.9,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 3000,
+      "start": 54.24,
+      "end": 57.66,
+      "text": "Planes over America broadcast where they are, every second.",
+      "tokens": [
+        51588,
+        8112,
+        279,
+        670,
+        3374,
+        9975,
+        689,
+        436,
+        366,
+        11,
+        633,
+        1150,
+        13,
+        51750
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1995333328987788,
+      "compression_ratio": 1.553191489361702,
+      "no_speech_prob": 2.8601958041579723e-12,
+      "words": [
+        {
+          "word": " Planes",
+          "start": 54.24,
+          "end": 54.8,
+          "probability": 0.97314453125
+        },
+        {
+          "word": " over",
+          "start": 54.8,
+          "end": 55.0,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " America",
+          "start": 55.0,
+          "end": 55.44,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " broadcast",
+          "start": 55.44,
+          "end": 55.86,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " where",
+          "start": 55.86,
+          "end": 56.18,
+          "probability": 0.998046875
+        },
+        {
+          "word": " they",
+          "start": 56.18,
+          "end": 56.32,
+          "probability": 1.0
+        },
+        {
+          "word": " are,",
+          "start": 56.32,
+          "end": 56.58,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " every",
+          "start": 56.76,
+          "end": 57.2,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " second.",
+          "start": 57.2,
+          "end": 57.66,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 5766,
+      "start": 57.66,
+      "end": 61.12,
+      "text": "Airliners and over 100,000 private planes.",
+      "tokens": [
+        50365,
+        5774,
+        22896,
+        433,
+        293,
+        670,
+        2319,
+        11,
+        1360,
+        4551,
+        14952,
+        13,
+        50538
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28635225178282936,
+      "compression_ratio": 1.423728813559322,
+      "no_speech_prob": 5.01958240597955e-12,
+      "words": [
+        {
+          "word": " Air",
+          "start": 57.66,
+          "end": 58.4,
+          "probability": 0.0257720947265625
+        },
+        {
+          "word": " liners",
+          "start": 58.4,
+          "end": 58.76,
+          "probability": 0.76708984375
+        },
+        {
+          "word": " and",
+          "start": 58.76,
+          "end": 59.42,
+          "probability": 0.759765625
+        },
+        {
+          "word": " over",
+          "start": 59.42,
+          "end": 59.7,
+          "probability": 0.98779296875
+        },
+        {
+          "word": " 100",
+          "start": 59.7,
+          "end": 60.0,
+          "probability": 0.1964111328125
+        },
+        {
+          "word": ",000",
+          "start": 60.0,
+          "end": 60.4,
+          "probability": 0.953125
+        },
+        {
+          "word": " private",
+          "start": 60.4,
+          "end": 60.68,
+          "probability": 0.9931640625
+        },
+        {
+          "word": " planes.",
+          "start": 60.68,
+          "end": 61.12,
+          "probability": 0.99658203125
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "seek": 5766,
+      "start": 61.4,
+      "end": 62.56,
+      "text": "It's all recorded.",
+      "tokens": [
+        50562,
+        467,
+        311,
+        439,
+        8287,
+        13,
+        50610
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28635225178282936,
+      "compression_ratio": 1.423728813559322,
+      "no_speech_prob": 5.01958240597955e-12,
+      "words": [
+        {
+          "word": " It's",
+          "start": 61.4,
+          "end": 61.96,
+          "probability": 0.98974609375
+        },
+        {
+          "word": " all",
+          "start": 61.96,
+          "end": 62.08,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " recorded.",
+          "start": 62.08,
+          "end": 62.56,
+          "probability": 0.99853515625
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "seek": 5766,
+      "start": 62.76,
+      "end": 64.18,
+      "text": "So you download that whole day.",
+      "tokens": [
+        50626,
+        407,
+        291,
+        5484,
+        300,
+        1379,
+        786,
+        13,
+        50694
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28635225178282936,
+      "compression_ratio": 1.423728813559322,
+      "no_speech_prob": 5.01958240597955e-12,
+      "words": [
+        {
+          "word": " So",
+          "start": 62.76,
+          "end": 63.04,
+          "probability": 0.982421875
+        },
+        {
+          "word": " you",
+          "start": 63.04,
+          "end": 63.14,
+          "probability": 0.9501953125
+        },
+        {
+          "word": " download",
+          "start": 63.14,
+          "end": 63.44,
+          "probability": 0.99609375
+        },
+        {
+          "word": " that",
+          "start": 63.44,
+          "end": 63.72,
+          "probability": 0.99169921875
+        },
+        {
+          "word": " whole",
+          "start": 63.72,
+          "end": 63.92,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " day.",
+          "start": 63.92,
+          "end": 64.18,
+          "probability": 0.9990234375
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5766,
+      "start": 64.72,
+      "end": 65.82,
+      "text": "The sound is a propeller.",
+      "tokens": [
+        50720,
+        440,
+        1626,
+        307,
+        257,
+        25577,
+        4658,
+        13,
+        50774
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28635225178282936,
+      "compression_ratio": 1.423728813559322,
+      "no_speech_prob": 5.01958240597955e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 64.72,
+          "end": 64.84,
+          "probability": 0.99169921875
+        },
+        {
+          "word": " sound",
+          "start": 64.84,
+          "end": 65.12,
+          "probability": 0.99609375
+        },
+        {
+          "word": " is",
+          "start": 65.12,
+          "end": 65.3,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " a",
+          "start": 65.3,
+          "end": 65.4,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " propeller.",
+          "start": 65.4,
+          "end": 65.82,
+          "probability": 0.97705078125
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "seek": 5766,
+      "start": 66.3,
+      "end": 67.28,
+      "text": "So out go the jets.",
+      "tokens": [
+        50795,
+        407,
+        484,
+        352,
+        264,
+        35124,
+        13,
+        50850
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28635225178282936,
+      "compression_ratio": 1.423728813559322,
+      "no_speech_prob": 5.01958240597955e-12,
+      "words": [
+        {
+          "word": " So",
+          "start": 66.3,
+          "end": 66.4,
+          "probability": 0.9931640625
+        },
+        {
+          "word": " out",
+          "start": 66.4,
+          "end": 66.66,
+          "probability": 0.98095703125
+        },
+        {
+          "word": " go",
+          "start": 66.66,
+          "end": 66.82,
+          "probability": 0.982421875
+        },
+        {
+          "word": " the",
+          "start": 66.82,
+          "end": 66.98,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " jets.",
+          "start": 66.98,
+          "end": 67.28,
+          "probability": 0.95166015625
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "seek": 5766,
+      "start": 67.9,
+      "end": 70.12,
+      "text": "Then you ask every spot in the country.",
+      "tokens": [
+        50882,
+        1396,
+        291,
+        1029,
+        633,
+        4008,
+        294,
+        264,
+        1941,
+        13,
+        50990
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28635225178282936,
+      "compression_ratio": 1.423728813559322,
+      "no_speech_prob": 5.01958240597955e-12,
+      "words": [
+        {
+          "word": " Then",
+          "start": 67.9,
+          "end": 68.24,
+          "probability": 0.99169921875
+        },
+        {
+          "word": " you",
+          "start": 68.24,
+          "end": 68.42,
+          "probability": 0.9873046875
+        },
+        {
+          "word": " ask",
+          "start": 68.42,
+          "end": 68.7,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " every",
+          "start": 68.7,
+          "end": 69.04,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " spot",
+          "start": 69.04,
+          "end": 69.38,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " in",
+          "start": 69.38,
+          "end": 69.66,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " the",
+          "start": 69.66,
+          "end": 69.78,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " country.",
+          "start": 69.78,
+          "end": 70.12,
+          "probability": 0.99853515625
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "seek": 5766,
+      "start": 70.34,
+      "end": 71.8,
+      "text": "Would you hear a plane like that?",
+      "tokens": [
+        51003,
+        6068,
+        291,
+        1568,
+        257,
+        5720,
+        411,
+        300,
+        30,
+        51074
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28635225178282936,
+      "compression_ratio": 1.423728813559322,
+      "no_speech_prob": 5.01958240597955e-12,
+      "words": [
+        {
+          "word": " Would",
+          "start": 70.34,
+          "end": 70.72,
+          "probability": 0.97802734375
+        },
+        {
+          "word": " you",
+          "start": 70.72,
+          "end": 70.82,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " hear",
+          "start": 70.82,
+          "end": 71.0,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " a",
+          "start": 71.0,
+          "end": 71.1,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " plane",
+          "start": 71.1,
+          "end": 71.32,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " like",
+          "start": 71.32,
+          "end": 71.5,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " that?",
+          "start": 71.5,
+          "end": 71.8,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "seek": 5766,
+      "start": 71.98,
+      "end": 74.68,
+      "text": "And 920 seconds later, the other one?",
+      "tokens": [
+        51091,
+        400,
+        1722,
+        2009,
+        3949,
+        1780,
+        11,
+        264,
+        661,
+        472,
+        30,
+        51218
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28635225178282936,
+      "compression_ratio": 1.423728813559322,
+      "no_speech_prob": 5.01958240597955e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 71.98,
+          "end": 72.38,
+          "probability": 0.98876953125
+        },
+        {
+          "word": " 920",
+          "start": 72.38,
+          "end": 73.24,
+          "probability": 0.98876953125
+        },
+        {
+          "word": " seconds",
+          "start": 73.24,
+          "end": 73.6,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " later,",
+          "start": 73.6,
+          "end": 73.94,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " the",
+          "start": 73.94,
+          "end": 74.2,
+          "probability": 0.998046875
+        },
+        {
+          "word": " other",
+          "start": 74.2,
+          "end": 74.4,
+          "probability": 1.0
+        },
+        {
+          "word": " one?",
+          "start": 74.4,
+          "end": 74.68,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "seek": 7468,
+      "start": 74.68,
+      "end": 78.28,
+      "text": "For this clip, about 70,000 spots said yes.",
+      "tokens": [
+        50365,
+        1171,
+        341,
+        7353,
+        11,
+        466,
+        5285,
+        11,
+        1360,
+        10681,
+        848,
+        2086,
+        13,
+        50547
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " For",
+          "start": 74.68,
+          "end": 75.52,
+          "probability": 0.79638671875
+        },
+        {
+          "word": " this",
+          "start": 75.52,
+          "end": 75.74,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " clip,",
+          "start": 75.74,
+          "end": 76.02,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " about",
+          "start": 76.44,
+          "end": 76.58,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " 70",
+          "start": 76.58,
+          "end": 76.96,
+          "probability": 0.9970703125
+        },
+        {
+          "word": ",000",
+          "start": 76.96,
+          "end": 77.34,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " spots",
+          "start": 77.34,
+          "end": 77.7,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " said",
+          "start": 77.7,
+          "end": 77.96,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " yes.",
+          "start": 77.96,
+          "end": 78.28,
+          "probability": 0.9736328125
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "seek": 7468,
+      "start": 78.56,
+      "end": 79.7,
+      "text": "Mostly around airports.",
+      "tokens": [
+        50562,
+        29035,
+        926,
+        36561,
+        13,
+        50619
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " Mostly",
+          "start": 78.56,
+          "end": 79.02,
+          "probability": 0.982421875
+        },
+        {
+          "word": " around",
+          "start": 79.02,
+          "end": 79.28,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " airports.",
+          "start": 79.28,
+          "end": 79.7,
+          "probability": 0.99755859375
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "seek": 7468,
+      "start": 80.3,
+      "end": 83.98,
+      "text": "But this clip has 15 minutes of nothing between the two planes.",
+      "tokens": [
+        50653,
+        583,
+        341,
+        7353,
+        575,
+        2119,
+        2077,
+        295,
+        1825,
+        1296,
+        264,
+        732,
+        14952,
+        13,
+        50833
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " But",
+          "start": 80.3,
+          "end": 80.64,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " this",
+          "start": 80.64,
+          "end": 80.86,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " clip",
+          "start": 80.86,
+          "end": 81.1,
+          "probability": 0.998046875
+        },
+        {
+          "word": " has",
+          "start": 81.1,
+          "end": 81.34,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " 15",
+          "start": 81.34,
+          "end": 81.76,
+          "probability": 0.9921875
+        },
+        {
+          "word": " minutes",
+          "start": 81.76,
+          "end": 82.06,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " of",
+          "start": 82.06,
+          "end": 82.24,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " nothing",
+          "start": 82.24,
+          "end": 82.56,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " between",
+          "start": 82.56,
+          "end": 83.18,
+          "probability": 0.96337890625
+        },
+        {
+          "word": " the",
+          "start": 83.18,
+          "end": 83.44,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " two",
+          "start": 83.44,
+          "end": 83.6,
+          "probability": 0.98876953125
+        },
+        {
+          "word": " planes.",
+          "start": 83.6,
+          "end": 83.98,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "seek": 7468,
+      "start": 84.8,
+      "end": 86.68,
+      "text": "And silence is a clue, too.",
+      "tokens": [
+        50881,
+        400,
+        12239,
+        307,
+        257,
+        13602,
+        11,
+        886,
+        13,
+        50967
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 84.8,
+          "end": 85.44,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " silence",
+          "start": 85.44,
+          "end": 85.84,
+          "probability": 0.998046875
+        },
+        {
+          "word": " is",
+          "start": 85.84,
+          "end": 86.06,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " a",
+          "start": 86.06,
+          "end": 86.16,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " clue,",
+          "start": 86.16,
+          "end": 86.36,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " too.",
+          "start": 86.38,
+          "end": 86.68,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "seek": 7468,
+      "start": 87.22,
+      "end": 89.94,
+      "text": "Every spot that would have heard a third plane, gone.",
+      "tokens": [
+        51000,
+        2048,
+        4008,
+        300,
+        576,
+        362,
+        2198,
+        257,
+        2636,
+        5720,
+        11,
+        2780,
+        13,
+        51132
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " Every",
+          "start": 87.22,
+          "end": 87.64,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " spot",
+          "start": 87.64,
+          "end": 87.96,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " that",
+          "start": 87.96,
+          "end": 88.16,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " would",
+          "start": 88.16,
+          "end": 88.28,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " have",
+          "start": 88.28,
+          "end": 88.4,
+          "probability": 0.98828125
+        },
+        {
+          "word": " heard",
+          "start": 88.4,
+          "end": 88.58,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " a",
+          "start": 88.58,
+          "end": 88.76,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " third",
+          "start": 88.76,
+          "end": 88.94,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " plane,",
+          "start": 88.94,
+          "end": 89.38,
+          "probability": 1.0
+        },
+        {
+          "word": " gone.",
+          "start": 89.52,
+          "end": 89.94,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "seek": 7468,
+      "start": 90.38,
+      "end": 91.6,
+      "text": "15,000 left.",
+      "tokens": [
+        51155,
+        2119,
+        11,
+        1360,
+        1411,
+        13,
+        51212
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " 15",
+          "start": 90.38,
+          "end": 90.82,
+          "probability": 0.99658203125
+        },
+        {
+          "word": ",000",
+          "start": 90.82,
+          "end": 91.24,
+          "probability": 1.0
+        },
+        {
+          "word": " left.",
+          "start": 91.24,
+          "end": 91.6,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "seek": 7468,
+      "start": 92.26,
+      "end": 93.5,
+      "text": "One thing was left.",
+      "tokens": [
+        51245,
+        1485,
+        551,
+        390,
+        1411,
+        13,
+        51307
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " One",
+          "start": 92.26,
+          "end": 92.74,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " thing",
+          "start": 92.74,
+          "end": 92.96,
+          "probability": 1.0
+        },
+        {
+          "word": " was",
+          "start": 92.96,
+          "end": 93.16,
+          "probability": 1.0
+        },
+        {
+          "word": " left.",
+          "start": 93.16,
+          "end": 93.5,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "seek": 7468,
+      "start": 93.76,
+      "end": 94.82,
+      "text": "The shape of the line.",
+      "tokens": [
+        51320,
+        440,
+        3909,
+        295,
+        264,
+        1622,
+        13,
+        51373
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 93.76,
+          "end": 93.92,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " shape",
+          "start": 93.92,
+          "end": 94.18,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " of",
+          "start": 94.18,
+          "end": 94.34,
+          "probability": 1.0
+        },
+        {
+          "word": " the",
+          "start": 94.34,
+          "end": 94.46,
+          "probability": 1.0
+        },
+        {
+          "word": " line.",
+          "start": 94.46,
+          "end": 94.82,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "seek": 7468,
+      "start": 95.26,
+      "end": 97.82,
+      "text": "Real planes turn, climb and change speed.",
+      "tokens": [
+        51400,
+        8467,
+        14952,
+        1261,
+        11,
+        10724,
+        293,
+        1319,
+        3073,
+        13,
+        51524
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " Real",
+          "start": 95.26,
+          "end": 95.58,
+          "probability": 0.98974609375
+        },
+        {
+          "word": " planes",
+          "start": 95.58,
+          "end": 95.98,
+          "probability": 1.0
+        },
+        {
+          "word": " turn,",
+          "start": 95.98,
+          "end": 96.32,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " climb",
+          "start": 96.54,
+          "end": 96.86,
+          "probability": 1.0
+        },
+        {
+          "word": " and",
+          "start": 96.86,
+          "end": 97.08,
+          "probability": 0.42626953125
+        },
+        {
+          "word": " change",
+          "start": 97.08,
+          "end": 97.44,
+          "probability": 1.0
+        },
+        {
+          "word": " speed.",
+          "start": 97.44,
+          "end": 97.82,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "seek": 7468,
+      "start": 98.24,
+      "end": 99.86,
+      "text": "Every wobble bends the line.",
+      "tokens": [
+        51549,
+        2048,
+        33775,
+        638,
+        42990,
+        264,
+        1622,
+        13,
+        51626
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.25483088817411254,
+      "compression_ratio": 1.5246636771300448,
+      "no_speech_prob": 5.598718971072669e-12,
+      "words": [
+        {
+          "word": " Every",
+          "start": 98.24,
+          "end": 98.66,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " wobble",
+          "start": 98.66,
+          "end": 99.0,
+          "probability": 1.0
+        },
+        {
+          "word": " bends",
+          "start": 99.0,
+          "end": 99.32,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " the",
+          "start": 99.32,
+          "end": 99.52,
+          "probability": 1.0
+        },
+        {
+          "word": " line.",
+          "start": 99.52,
+          "end": 99.86,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "seek": 9986,
+      "start": 100.66,
+      "end": 103.64,
+      "text": "So for every spot, you work out the exact line it would have heard.",
+      "tokens": [
+        50405,
+        407,
+        337,
+        633,
+        4008,
+        11,
+        291,
+        589,
+        484,
+        264,
+        1900,
+        1622,
+        309,
+        576,
+        362,
+        2198,
+        13,
+        50555
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " So",
+          "start": 100.5,
+          "end": 100.78,
+          "probability": 0.94189453125
+        },
+        {
+          "word": " for",
+          "start": 100.78,
+          "end": 101.02,
+          "probability": 0.685546875
+        },
+        {
+          "word": " every",
+          "start": 101.02,
+          "end": 101.26,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " spot,",
+          "start": 101.26,
+          "end": 101.58,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " you",
+          "start": 101.8,
+          "end": 102.06,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " work",
+          "start": 102.06,
+          "end": 102.3,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " out",
+          "start": 102.3,
+          "end": 102.4,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " the",
+          "start": 102.4,
+          "end": 102.52,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " exact",
+          "start": 102.52,
+          "end": 102.78,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " line",
+          "start": 102.78,
+          "end": 102.98,
+          "probability": 1.0
+        },
+        {
+          "word": " it",
+          "start": 102.98,
+          "end": 103.14,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " would",
+          "start": 103.14,
+          "end": 103.24,
+          "probability": 1.0
+        },
+        {
+          "word": " have",
+          "start": 103.24,
+          "end": 103.34,
+          "probability": 0.99169921875
+        },
+        {
+          "word": " heard.",
+          "start": 103.34,
+          "end": 103.64,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "seek": 9986,
+      "start": 104.14,
+      "end": 105.08,
+      "text": "There's a trap.",
+      "tokens": [
+        50593,
+        821,
+        311,
+        257,
+        11487,
+        13,
+        50628
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " There's",
+          "start": 104.14,
+          "end": 104.66,
+          "probability": 0.998046875
+        },
+        {
+          "word": " a",
+          "start": 104.66,
+          "end": 104.74,
+          "probability": 1.0
+        },
+        {
+          "word": " trap.",
+          "start": 104.74,
+          "end": 105.08,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "seek": 9986,
+      "start": 105.54,
+      "end": 106.36,
+      "text": "Sound is slow.",
+      "tokens": [
+        50654,
+        14673,
+        307,
+        2964,
+        13,
+        50691
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " Sound",
+          "start": 105.54,
+          "end": 105.88,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " is",
+          "start": 105.88,
+          "end": 106.06,
+          "probability": 1.0
+        },
+        {
+          "word": " slow.",
+          "start": 106.06,
+          "end": 106.36,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "seek": 9986,
+      "start": 106.62,
+      "end": 109.72,
+      "text": "By the time you hear a plane, it's already somewhere else.",
+      "tokens": [
+        50717,
+        3146,
+        264,
+        565,
+        291,
+        1568,
+        257,
+        5720,
+        11,
+        309,
+        311,
+        1217,
+        4079,
+        1646,
+        13,
+        50860
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " By",
+          "start": 106.62,
+          "end": 107.0,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " the",
+          "start": 107.0,
+          "end": 107.14,
+          "probability": 1.0
+        },
+        {
+          "word": " time",
+          "start": 107.14,
+          "end": 107.34,
+          "probability": 1.0
+        },
+        {
+          "word": " you",
+          "start": 107.34,
+          "end": 107.5,
+          "probability": 1.0
+        },
+        {
+          "word": " hear",
+          "start": 107.5,
+          "end": 107.66,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 107.66,
+          "end": 107.8,
+          "probability": 1.0
+        },
+        {
+          "word": " plane,",
+          "start": 107.8,
+          "end": 108.04,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " it's",
+          "start": 108.3,
+          "end": 108.58,
+          "probability": 1.0
+        },
+        {
+          "word": " already",
+          "start": 108.58,
+          "end": 108.94,
+          "probability": 0.9873046875
+        },
+        {
+          "word": " somewhere",
+          "start": 108.94,
+          "end": 109.36,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " else.",
+          "start": 109.36,
+          "end": 109.72,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "seek": 9986,
+      "start": 110.26,
+      "end": 110.82,
+      "text": "Miss that.",
+      "tokens": [
+        50888,
+        5275,
+        300,
+        13,
+        50914
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " Miss",
+          "start": 110.26,
+          "end": 110.48,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " that.",
+          "start": 110.48,
+          "end": 110.82,
+          "probability": 0.9638671875
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 9986,
+      "start": 111.04,
+      "end": 112.26,
+      "text": "And the search fails.",
+      "tokens": [
+        50931,
+        400,
+        264,
+        3164,
+        18199,
+        13,
+        50986
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 111.04,
+          "end": 111.4,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " the",
+          "start": 111.4,
+          "end": 111.52,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " search",
+          "start": 111.52,
+          "end": 111.82,
+          "probability": 1.0
+        },
+        {
+          "word": " fails.",
+          "start": 111.82,
+          "end": 112.26,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "seek": 9986,
+      "start": 112.88,
+      "end": 115.78,
+      "text": "Then you lay every predicted line over the real ones.",
+      "tokens": [
+        51029,
+        1396,
+        291,
+        2360,
+        633,
+        19147,
+        1622,
+        670,
+        264,
+        957,
+        2306,
+        13,
+        51162
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " Then",
+          "start": 112.88,
+          "end": 113.36,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " you",
+          "start": 113.36,
+          "end": 113.56,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " lay",
+          "start": 113.56,
+          "end": 113.76,
+          "probability": 1.0
+        },
+        {
+          "word": " every",
+          "start": 113.76,
+          "end": 114.14,
+          "probability": 1.0
+        },
+        {
+          "word": " predicted",
+          "start": 114.14,
+          "end": 114.58,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " line",
+          "start": 114.58,
+          "end": 114.88,
+          "probability": 1.0
+        },
+        {
+          "word": " over",
+          "start": 114.88,
+          "end": 115.14,
+          "probability": 1.0
+        },
+        {
+          "word": " the",
+          "start": 115.14,
+          "end": 115.28,
+          "probability": 1.0
+        },
+        {
+          "word": " real",
+          "start": 115.28,
+          "end": 115.5,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " ones.",
+          "start": 115.5,
+          "end": 115.78,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 9986,
+      "start": 116.12,
+      "end": 118.36,
+      "text": "One spot matched both planes perfectly.",
+      "tokens": [
+        51188,
+        1485,
+        4008,
+        21447,
+        1293,
+        14952,
+        6239,
+        13,
+        51290
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " One",
+          "start": 116.12,
+          "end": 116.58,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " spot",
+          "start": 116.58,
+          "end": 116.84,
+          "probability": 1.0
+        },
+        {
+          "word": " matched",
+          "start": 116.84,
+          "end": 117.22,
+          "probability": 1.0
+        },
+        {
+          "word": " both",
+          "start": 117.22,
+          "end": 117.5,
+          "probability": 1.0
+        },
+        {
+          "word": " planes",
+          "start": 117.5,
+          "end": 117.82,
+          "probability": 1.0
+        },
+        {
+          "word": " perfectly.",
+          "start": 117.82,
+          "end": 118.36,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "seek": 9986,
+      "start": 118.96,
+      "end": 120.1,
+      "text": "Second place wasn't close.",
+      "tokens": [
+        51322,
+        5736,
+        1081,
+        2067,
+        380,
+        1998,
+        13,
+        51379
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18177843617868947,
+      "compression_ratio": 1.5170731707317073,
+      "no_speech_prob": 7.0754548053830746e-12,
+      "words": [
+        {
+          "word": " Second",
+          "start": 118.96,
+          "end": 119.18,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " place",
+          "start": 119.18,
+          "end": 119.5,
+          "probability": 1.0
+        },
+        {
+          "word": " wasn't",
+          "start": 119.5,
+          "end": 119.8,
+          "probability": 1.0
+        },
+        {
+          "word": " close.",
+          "start": 119.8,
+          "end": 120.1,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "seek": 12010,
+      "start": 120.1,
+      "end": 121.84,
+      "text": "Then a harder test.",
+      "tokens": [
+        50365,
+        1396,
+        257,
+        6081,
+        1500,
+        13,
+        50454
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " Then",
+          "start": 120.1,
+          "end": 121.08,
+          "probability": 0.85205078125
+        },
+        {
+          "word": " a",
+          "start": 121.08,
+          "end": 121.2,
+          "probability": 0.99462890625
+        },
+        {
+          "word": " harder",
+          "start": 121.2,
+          "end": 121.44,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " test.",
+          "start": 121.44,
+          "end": 121.84,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "seek": 12010,
+      "start": 122.08,
+      "end": 123.2,
+      "text": "One minute of audio.",
+      "tokens": [
+        50473,
+        1485,
+        3456,
+        295,
+        6278,
+        13,
+        50521
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " One",
+          "start": 122.08,
+          "end": 122.42,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " minute",
+          "start": 122.42,
+          "end": 122.68,
+          "probability": 1.0
+        },
+        {
+          "word": " of",
+          "start": 122.68,
+          "end": 122.84,
+          "probability": 1.0
+        },
+        {
+          "word": " audio.",
+          "start": 122.84,
+          "end": 123.2,
+          "probability": 0.99951171875
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "seek": 12010,
+      "start": 123.54,
+      "end": 124.46,
+      "text": "One faint plane.",
+      "tokens": [
+        50544,
+        1485,
+        21104,
+        5720,
+        13,
+        50584
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " One",
+          "start": 123.54,
+          "end": 123.82,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " faint",
+          "start": 123.82,
+          "end": 124.12,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " plane.",
+          "start": 124.12,
+          "end": 124.46,
+          "probability": 0.85107421875
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "seek": 12010,
+      "start": 124.64,
+      "end": 125.96,
+      "text": "And the time it was recorded.",
+      "tokens": [
+        50601,
+        400,
+        264,
+        565,
+        309,
+        390,
+        8287,
+        13,
+        50659
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 124.64,
+          "end": 124.88,
+          "probability": 0.9921875
+        },
+        {
+          "word": " the",
+          "start": 124.88,
+          "end": 125.0,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " time",
+          "start": 125.0,
+          "end": 125.26,
+          "probability": 1.0
+        },
+        {
+          "word": " it",
+          "start": 125.26,
+          "end": 125.42,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " was",
+          "start": 125.42,
+          "end": 125.56,
+          "probability": 1.0
+        },
+        {
+          "word": " recorded.",
+          "start": 125.56,
+          "end": 125.96,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "seek": 12010,
+      "start": 126.3,
+      "end": 127.72,
+      "text": "The whole country again.",
+      "tokens": [
+        50693,
+        440,
+        1379,
+        1941,
+        797,
+        13,
+        50749
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 126.3,
+          "end": 126.78,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " whole",
+          "start": 126.78,
+          "end": 127.02,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " country",
+          "start": 127.02,
+          "end": 127.44,
+          "probability": 1.0
+        },
+        {
+          "word": " again.",
+          "start": 127.44,
+          "end": 127.72,
+          "probability": 0.9990234375
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "seek": 12010,
+      "start": 128.04,
+      "end": 129.44,
+      "text": "The same spot came first.",
+      "tokens": [
+        50773,
+        440,
+        912,
+        4008,
+        1361,
+        700,
+        13,
+        50835
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 128.04,
+          "end": 128.38,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " same",
+          "start": 128.38,
+          "end": 128.58,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " spot",
+          "start": 128.58,
+          "end": 128.84,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " came",
+          "start": 128.84,
+          "end": 129.06,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " first.",
+          "start": 129.06,
+          "end": 129.44,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "seek": 12010,
+      "start": 129.86,
+      "end": 131.0,
+      "text": "That's one square.",
+      "tokens": [
+        50869,
+        663,
+        311,
+        472,
+        3732,
+        13,
+        50911
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " That's",
+          "start": 129.86,
+          "end": 130.42,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " one",
+          "start": 130.42,
+          "end": 130.62,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " square.",
+          "start": 130.62,
+          "end": 131.0,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "seek": 12010,
+      "start": 131.32,
+      "end": 132.34,
+      "text": "100 meters wide.",
+      "tokens": [
+        50928,
+        2319,
+        8146,
+        4874,
+        13,
+        50978
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " 100",
+          "start": 131.32,
+          "end": 131.66,
+          "probability": 0.73486328125
+        },
+        {
+          "word": " meters",
+          "start": 131.66,
+          "end": 131.98,
+          "probability": 0.65283203125
+        },
+        {
+          "word": " wide.",
+          "start": 131.98,
+          "end": 132.34,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "seek": 12010,
+      "start": 132.7,
+      "end": 135.56,
+      "text": "America has more than 750 million of them.",
+      "tokens": [
+        51007,
+        3374,
+        575,
+        544,
+        813,
+        31682,
+        2459,
+        295,
+        552,
+        13,
+        51139
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " America",
+          "start": 132.7,
+          "end": 133.26,
+          "probability": 0.998046875
+        },
+        {
+          "word": " has",
+          "start": 133.26,
+          "end": 133.5,
+          "probability": 1.0
+        },
+        {
+          "word": " more",
+          "start": 133.5,
+          "end": 133.66,
+          "probability": 1.0
+        },
+        {
+          "word": " than",
+          "start": 133.66,
+          "end": 133.8,
+          "probability": 1.0
+        },
+        {
+          "word": " 750",
+          "start": 133.8,
+          "end": 134.78,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " million",
+          "start": 134.78,
+          "end": 135.22,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " of",
+          "start": 135.22,
+          "end": 135.42,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " them.",
+          "start": 135.42,
+          "end": 135.56,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "seek": 12010,
+      "start": 135.96,
+      "end": 137.32,
+      "text": "The sound picked the right one.",
+      "tokens": [
+        51166,
+        440,
+        1626,
+        6183,
+        264,
+        558,
+        472,
+        13,
+        51228
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 135.96,
+          "end": 136.24,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " sound",
+          "start": 136.24,
+          "end": 136.48,
+          "probability": 0.9521484375
+        },
+        {
+          "word": " picked",
+          "start": 136.48,
+          "end": 136.68,
+          "probability": 0.98583984375
+        },
+        {
+          "word": " the",
+          "start": 136.68,
+          "end": 136.82,
+          "probability": 1.0
+        },
+        {
+          "word": " right",
+          "start": 136.82,
+          "end": 137.02,
+          "probability": 1.0
+        },
+        {
+          "word": " one.",
+          "start": 137.02,
+          "end": 137.32,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "seek": 12010,
+      "start": 138.02,
+      "end": 139.52,
+      "text": "Street View did the rest.",
+      "tokens": [
+        51274,
+        7638,
+        13909,
+        630,
+        264,
+        1472,
+        13,
+        51338
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " Street",
+          "start": 138.02,
+          "end": 138.54,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " View",
+          "start": 138.54,
+          "end": 138.82,
+          "probability": 0.7314453125
+        },
+        {
+          "word": " did",
+          "start": 138.82,
+          "end": 139.04,
+          "probability": 1.0
+        },
+        {
+          "word": " the",
+          "start": 139.04,
+          "end": 139.16,
+          "probability": 1.0
+        },
+        {
+          "word": " rest.",
+          "start": 139.16,
+          "end": 139.52,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "seek": 12010,
+      "start": 139.88,
+      "end": 140.8,
+      "text": "The same trees.",
+      "tokens": [
+        51361,
+        440,
+        912,
+        5852,
+        13,
+        51403
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 139.88,
+          "end": 140.2,
+          "probability": 0.99853515625
+        },
+        {
+          "word": " same",
+          "start": 140.2,
+          "end": 140.4,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " trees.",
+          "start": 140.4,
+          "end": 140.8,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "seek": 12010,
+      "start": 141.06,
+      "end": 142.02,
+      "text": "And on a pole.",
+      "tokens": [
+        51426,
+        400,
+        322,
+        257,
+        13208,
+        13,
+        51462
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 141.06,
+          "end": 141.5,
+          "probability": 0.998046875
+        },
+        {
+          "word": " on",
+          "start": 141.5,
+          "end": 141.64,
+          "probability": 0.9951171875
+        },
+        {
+          "word": " a",
+          "start": 141.64,
+          "end": 141.78,
+          "probability": 1.0
+        },
+        {
+          "word": " pole.",
+          "start": 141.78,
+          "end": 142.02,
+          "probability": 0.970703125
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "seek": 12010,
+      "start": 142.2,
+      "end": 142.8,
+      "text": "The camera.",
+      "tokens": [
+        51479,
+        440,
+        2799,
+        13,
+        51501
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " The",
+          "start": 142.2,
+          "end": 142.48,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " camera.",
+          "start": 142.48,
+          "end": 142.8,
+          "probability": 0.9990234375
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "seek": 12010,
+      "start": 143.38,
+      "end": 144.8,
+      "text": "So how do you hide it?",
+      "tokens": [
+        51545,
+        407,
+        577,
+        360,
+        291,
+        6479,
+        309,
+        30,
+        51601
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " So",
+          "start": 143.38,
+          "end": 143.88,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " how",
+          "start": 143.88,
+          "end": 144.06,
+          "probability": 0.98486328125
+        },
+        {
+          "word": " do",
+          "start": 144.06,
+          "end": 144.18,
+          "probability": 1.0
+        },
+        {
+          "word": " you",
+          "start": 144.18,
+          "end": 144.28,
+          "probability": 1.0
+        },
+        {
+          "word": " hide",
+          "start": 144.28,
+          "end": 144.58,
+          "probability": 1.0
+        },
+        {
+          "word": " it?",
+          "start": 144.58,
+          "end": 144.8,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "seek": 12010,
+      "start": 145.24,
+      "end": 146.34,
+      "text": "Cut the low notes?",
+      "tokens": [
+        51630,
+        9431,
+        264,
+        2295,
+        5570,
+        30,
+        51677
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " Cut",
+          "start": 145.24,
+          "end": 145.62,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " the",
+          "start": 145.62,
+          "end": 145.78,
+          "probability": 1.0
+        },
+        {
+          "word": " low",
+          "start": 145.78,
+          "end": 145.94,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " notes?",
+          "start": 145.94,
+          "end": 146.34,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "seek": 12010,
+      "start": 146.74,
+      "end": 147.96,
+      "text": "Save it as an MP3?",
+      "tokens": [
+        51705,
+        15541,
+        309,
+        382,
+        364,
+        14146,
+        18,
+        30,
+        51759
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24840199397160456,
+      "compression_ratio": 1.559670781893004,
+      "no_speech_prob": 3.716207896964363e-12,
+      "words": [
+        {
+          "word": " Save",
+          "start": 146.74,
+          "end": 147.16,
+          "probability": 0.99755859375
+        },
+        {
+          "word": " it",
+          "start": 147.16,
+          "end": 147.26,
+          "probability": 1.0
+        },
+        {
+          "word": " as",
+          "start": 147.26,
+          "end": 147.38,
+          "probability": 1.0
+        },
+        {
+          "word": " an",
+          "start": 147.38,
+          "end": 147.48,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " MP3?",
+          "start": 147.48,
+          "end": 147.96,
+          "probability": 0.77734375
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "seek": 14796,
+      "start": 148.54000000000002,
+      "end": 149.06,
+      "text": "Turn it up.",
+      "tokens": [
+        50394,
+        7956,
+        309,
+        493,
+        13,
+        50421
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " Turn",
+          "start": 148.42,
+          "end": 148.7,
+          "probability": 0.8544921875
+        },
+        {
+          "word": " it",
+          "start": 148.7,
+          "end": 148.86,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " up.",
+          "start": 148.86,
+          "end": 149.06,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "seek": 14796,
+      "start": 149.2,
+      "end": 150.48,
+      "text": "And the line comes back.",
+      "tokens": [
+        50436,
+        400,
+        264,
+        1622,
+        1487,
+        646,
+        13,
+        50492
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 149.2,
+          "end": 149.64,
+          "probability": 0.998046875
+        },
+        {
+          "word": " the",
+          "start": 149.64,
+          "end": 149.74,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " line",
+          "start": 149.74,
+          "end": 149.92,
+          "probability": 1.0
+        },
+        {
+          "word": " comes",
+          "start": 149.92,
+          "end": 150.16,
+          "probability": 1.0
+        },
+        {
+          "word": " back.",
+          "start": 150.16,
+          "end": 150.48,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "seek": 14796,
+      "start": 151.12,
+      "end": 151.88,
+      "text": "Talk over it?",
+      "tokens": [
+        50530,
+        8780,
+        670,
+        309,
+        30,
+        50562
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " Talk",
+          "start": 151.12,
+          "end": 151.44,
+          "probability": 0.998046875
+        },
+        {
+          "word": " over",
+          "start": 151.44,
+          "end": 151.7,
+          "probability": 1.0
+        },
+        {
+          "word": " it?",
+          "start": 151.7,
+          "end": 151.88,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 14796,
+      "start": 152.04,
+      "end": 153.78,
+      "text": "There's been a plane under my voice.",
+      "tokens": [
+        50581,
+        821,
+        311,
+        668,
+        257,
+        5720,
+        833,
+        452,
+        3177,
+        13,
+        50656
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " There's",
+          "start": 152.04,
+          "end": 152.52,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " been",
+          "start": 152.52,
+          "end": 152.62,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 152.62,
+          "end": 152.74,
+          "probability": 1.0
+        },
+        {
+          "word": " plane",
+          "start": 152.74,
+          "end": 153.0,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " under",
+          "start": 153.0,
+          "end": 153.22,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " my",
+          "start": 153.22,
+          "end": 153.4,
+          "probability": 1.0
+        },
+        {
+          "word": " voice.",
+          "start": 153.4,
+          "end": 153.78,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "seek": 14796,
+      "start": 154.0,
+      "end": 155.42,
+      "text": "For the last 20 seconds.",
+      "tokens": [
+        50678,
+        1171,
+        264,
+        1036,
+        945,
+        3949,
+        13,
+        50739
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " For",
+          "start": 154.0,
+          "end": 154.36,
+          "probability": 0.99658203125
+        },
+        {
+          "word": " the",
+          "start": 154.36,
+          "end": 154.48,
+          "probability": 1.0
+        },
+        {
+          "word": " last",
+          "start": 154.48,
+          "end": 154.72,
+          "probability": 1.0
+        },
+        {
+          "word": " 20",
+          "start": 154.72,
+          "end": 155.0,
+          "probability": 0.9931640625
+        },
+        {
+          "word": " seconds.",
+          "start": 155.0,
+          "end": 155.42,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "seek": 14796,
+      "start": 156.16,
+      "end": 158.06,
+      "text": "It even comes through a phone call.",
+      "tokens": [
+        50780,
+        467,
+        754,
+        1487,
+        807,
+        257,
+        2593,
+        818,
+        13,
+        50871
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " It",
+          "start": 156.16,
+          "end": 156.72,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " even",
+          "start": 156.72,
+          "end": 156.92,
+          "probability": 1.0
+        },
+        {
+          "word": " comes",
+          "start": 156.92,
+          "end": 157.22,
+          "probability": 1.0
+        },
+        {
+          "word": " through",
+          "start": 157.22,
+          "end": 157.38,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 157.38,
+          "end": 157.54,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " phone",
+          "start": 157.54,
+          "end": 157.76,
+          "probability": 1.0
+        },
+        {
+          "word": " call.",
+          "start": 157.76,
+          "end": 158.06,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "seek": 14796,
+      "start": 158.76,
+      "end": 161.36,
+      "text": "A YouTuber called ColstO built all of this.",
+      "tokens": [
+        50921,
+        316,
+        23349,
+        1219,
+        4004,
+        372,
+        305,
+        3094,
+        439,
+        295,
+        341,
+        13,
+        51036
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " A",
+          "start": 158.76,
+          "end": 159.26,
+          "probability": 1.0
+        },
+        {
+          "word": " YouTuber",
+          "start": 159.26,
+          "end": 159.56,
+          "probability": 0.9970703125
+        },
+        {
+          "word": " called",
+          "start": 159.56,
+          "end": 159.96,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " Colstow",
+          "start": 159.96,
+          "end": 160.48,
+          "probability": 0.87451171875
+        },
+        {
+          "word": " built",
+          "start": 160.48,
+          "end": 160.76,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " all",
+          "start": 160.76,
+          "end": 160.96,
+          "probability": 1.0
+        },
+        {
+          "word": " of",
+          "start": 160.96,
+          "end": 161.06,
+          "probability": 1.0
+        },
+        {
+          "word": " this.",
+          "start": 161.06,
+          "end": 161.36,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "seek": 14796,
+      "start": 161.5,
+      "end": 164.44,
+      "text": "And demonstrated it on a real security camera clip.",
+      "tokens": [
+        51055,
+        400,
+        18772,
+        309,
+        322,
+        257,
+        957,
+        3825,
+        2799,
+        7353,
+        13,
+        51190
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 161.5,
+          "end": 161.94,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " demonstrated",
+          "start": 161.94,
+          "end": 162.48,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " it",
+          "start": 162.48,
+          "end": 162.78,
+          "probability": 1.0
+        },
+        {
+          "word": " on",
+          "start": 162.78,
+          "end": 162.96,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " a",
+          "start": 162.96,
+          "end": 163.08,
+          "probability": 1.0
+        },
+        {
+          "word": " real",
+          "start": 163.08,
+          "end": 163.34,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " security",
+          "start": 163.34,
+          "end": 163.8,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " camera",
+          "start": 163.8,
+          "end": 164.16,
+          "probability": 1.0
+        },
+        {
+          "word": " clip.",
+          "start": 164.16,
+          "end": 164.44,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "seek": 14796,
+      "start": 164.86,
+      "end": 165.9,
+      "text": "It took him months.",
+      "tokens": [
+        51221,
+        467,
+        1890,
+        796,
+        2493,
+        13,
+        51263
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " It",
+          "start": 164.86,
+          "end": 165.24,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " took",
+          "start": 165.24,
+          "end": 165.38,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " him",
+          "start": 165.38,
+          "end": 165.54,
+          "probability": 1.0
+        },
+        {
+          "word": " months.",
+          "start": 165.54,
+          "end": 165.9,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "seek": 14796,
+      "start": 166.1,
+      "end": 167.88,
+      "text": "And 5,000 lines of code.",
+      "tokens": [
+        51281,
+        400,
+        1025,
+        11,
+        1360,
+        3876,
+        295,
+        3089,
+        13,
+        51362
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 166.1,
+          "end": 166.46,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " 5",
+          "start": 166.46,
+          "end": 166.76,
+          "probability": 0.93017578125
+        },
+        {
+          "word": ",000",
+          "start": 166.76,
+          "end": 167.14,
+          "probability": 1.0
+        },
+        {
+          "word": " lines",
+          "start": 167.14,
+          "end": 167.4,
+          "probability": 1.0
+        },
+        {
+          "word": " of",
+          "start": 167.4,
+          "end": 167.56,
+          "probability": 1.0
+        },
+        {
+          "word": " code.",
+          "start": 167.56,
+          "end": 167.88,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "seek": 14796,
+      "start": 168.08,
+      "end": 169.26,
+      "text": "He hasn't shared it.",
+      "tokens": [
+        51362,
+        634,
+        6132,
+        380,
+        5507,
+        309,
+        13,
+        51434
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " He",
+          "start": 168.08,
+          "end": 168.5,
+          "probability": 0.99609375
+        },
+        {
+          "word": " hasn't",
+          "start": 168.5,
+          "end": 168.8,
+          "probability": 1.0
+        },
+        {
+          "word": " shared",
+          "start": 168.8,
+          "end": 169.04,
+          "probability": 1.0
+        },
+        {
+          "word": " it.",
+          "start": 169.04,
+          "end": 169.26,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "seek": 14796,
+      "start": 170.1,
+      "end": 172.32,
+      "text": "Next time a small plane flies over,",
+      "tokens": [
+        51491,
+        3087,
+        565,
+        257,
+        1359,
+        5720,
+        17414,
+        670,
+        11,
+        51584
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " Next",
+          "start": 170.1,
+          "end": 170.66,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " time",
+          "start": 170.66,
+          "end": 170.86,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 170.86,
+          "end": 171.02,
+          "probability": 1.0
+        },
+        {
+          "word": " small",
+          "start": 171.02,
+          "end": 171.26,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " plane",
+          "start": 171.26,
+          "end": 171.62,
+          "probability": 1.0
+        },
+        {
+          "word": " flies",
+          "start": 171.62,
+          "end": 171.96,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " over,",
+          "start": 171.96,
+          "end": 172.32,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "seek": 14796,
+      "start": 172.52,
+      "end": 175.14,
+      "text": "you might be the only place on Earth hearing it.",
+      "tokens": [
+        51610,
+        291,
+        1062,
+        312,
+        264,
+        787,
+        1081,
+        322,
+        4755,
+        4763,
+        309,
+        13,
+        51727
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " you",
+          "start": 172.52,
+          "end": 173.04,
+          "probability": 0.99462890625
+        },
+        {
+          "word": " might",
+          "start": 173.04,
+          "end": 173.24,
+          "probability": 1.0
+        },
+        {
+          "word": " be",
+          "start": 173.24,
+          "end": 173.4,
+          "probability": 1.0
+        },
+        {
+          "word": " the",
+          "start": 173.4,
+          "end": 173.56,
+          "probability": 1.0
+        },
+        {
+          "word": " only",
+          "start": 173.56,
+          "end": 173.82,
+          "probability": 1.0
+        },
+        {
+          "word": " place",
+          "start": 173.82,
+          "end": 174.18,
+          "probability": 1.0
+        },
+        {
+          "word": " on",
+          "start": 174.18,
+          "end": 174.36,
+          "probability": 1.0
+        },
+        {
+          "word": " Earth",
+          "start": 174.36,
+          "end": 174.56,
+          "probability": 0.56201171875
+        },
+        {
+          "word": " hearing",
+          "start": 174.56,
+          "end": 174.88,
+          "probability": 0.99951171875
+        },
+        {
+          "word": " it.",
+          "start": 174.88,
+          "end": 175.14,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "seek": 14796,
+      "start": 175.66,
+      "end": 176.96,
+      "text": "Exactly like that.",
+      "tokens": [
+        51749,
+        7587,
+        411,
+        300,
+        13,
+        51817
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.24876445208409037,
+      "compression_ratio": 1.52014652014652,
+      "no_speech_prob": 3.2669353333680817e-12,
+      "words": [
+        {
+          "word": " Exactly",
+          "start": 175.66,
+          "end": 176.22,
+          "probability": 0.9990234375
+        },
+        {
+          "word": " like",
+          "start": 176.22,
+          "end": 176.64,
+          "probability": 1.0
+        },
+        {
+          "word": " that.",
+          "start": 176.64,
+          "end": 176.96,
+          "probability": 1.0
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": " A",
+      "start": 2.1399999999999997,
+      "end": 2.7,
+      "probability": 0.947265625
+    },
+    {
+      "word": " plane",
+      "start": 2.7,
+      "end": 2.94,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " you",
+      "start": 2.94,
+      "end": 3.1,
+      "probability": 0.98876953125
+    },
+    {
+      "word": " can't",
+      "start": 3.1,
+      "end": 3.36,
+      "probability": 0.998046875
+    },
+    {
+      "word": " even",
+      "start": 3.36,
+      "end": 3.5,
+      "probability": 0.994140625
+    },
+    {
+      "word": " see",
+      "start": 3.5,
+      "end": 3.74,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " or",
+      "start": 3.74,
+      "end": 3.92,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " hear",
+      "start": 3.92,
+      "end": 4.16,
+      "probability": 0.998046875
+    },
+    {
+      "word": " can",
+      "start": 4.16,
+      "end": 4.66,
+      "probability": 0.921875
+    },
+    {
+      "word": " give",
+      "start": 4.66,
+      "end": 4.86,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " away",
+      "start": 4.86,
+      "end": 5.08,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " your",
+      "start": 5.08,
+      "end": 5.28,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " exact",
+      "start": 5.28,
+      "end": 5.68,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " location.",
+      "start": 5.68,
+      "end": 6.32,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " It's",
+      "start": 6.92,
+      "end": 7.48,
+      "probability": 0.99609375
+    },
+    {
+      "word": " already",
+      "start": 7.48,
+      "end": 7.84,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " been",
+      "start": 7.84,
+      "end": 8.12,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " done.",
+      "start": 8.12,
+      "end": 8.38,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " This",
+      "start": 8.74,
+      "end": 9.28,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " security",
+      "start": 9.28,
+      "end": 9.74,
+      "probability": 0.99609375
+    },
+    {
+      "word": " camera",
+      "start": 9.74,
+      "end": 10.26,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " could",
+      "start": 10.26,
+      "end": 10.86,
+      "probability": 0.99072265625
+    },
+    {
+      "word": " have",
+      "start": 10.86,
+      "end": 11.0,
+      "probability": 0.93603515625
+    },
+    {
+      "word": " been",
+      "start": 11.0,
+      "end": 11.16,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " anywhere",
+      "start": 11.16,
+      "end": 11.62,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " in",
+      "start": 11.62,
+      "end": 11.92,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " America.",
+      "start": 11.92,
+      "end": 12.34,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " With",
+      "start": 12.64,
+      "end": 13.06,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " nothing",
+      "start": 13.06,
+      "end": 13.32,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " but",
+      "start": 13.32,
+      "end": 13.48,
+      "probability": 0.998046875
+    },
+    {
+      "word": " the",
+      "start": 13.48,
+      "end": 13.6,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " date,",
+      "start": 13.6,
+      "end": 13.96,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " it",
+      "start": 14.1,
+      "end": 14.44,
+      "probability": 0.998046875
+    },
+    {
+      "word": " was",
+      "start": 14.44,
+      "end": 14.58,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " found",
+      "start": 14.58,
+      "end": 14.92,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " down",
+      "start": 14.92,
+      "end": 15.18,
+      "probability": 0.998046875
+    },
+    {
+      "word": " to",
+      "start": 15.18,
+      "end": 15.34,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " the",
+      "start": 15.34,
+      "end": 15.46,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " exact",
+      "start": 15.46,
+      "end": 15.86,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " pole",
+      "start": 15.86,
+      "end": 16.2,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " it",
+      "start": 16.2,
+      "end": 16.38,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " hangs",
+      "start": 16.38,
+      "end": 16.64,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " on.",
+      "start": 16.64,
+      "end": 16.86,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " Here's",
+      "start": 17.38,
+      "end": 17.68,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " how.",
+      "start": 17.68,
+      "end": 17.88,
+      "probability": 1.0
+    },
+    {
+      "word": " Listen,",
+      "start": 18.46,
+      "end": 19.02,
+      "probability": 0.99560546875
+    },
+    {
+      "word": " can",
+      "start": 19.36,
+      "end": 19.62,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " you",
+      "start": 19.62,
+      "end": 19.74,
+      "probability": 1.0
+    },
+    {
+      "word": " hear",
+      "start": 19.74,
+      "end": 19.94,
+      "probability": 1.0
+    },
+    {
+      "word": " a",
+      "start": 19.94,
+      "end": 20.08,
+      "probability": 1.0
+    },
+    {
+      "word": " plane?",
+      "start": 20.08,
+      "end": 20.36,
+      "probability": 1.0
+    },
+    {
+      "word": " Now",
+      "start": 22.32,
+      "end": 22.88,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " draw",
+      "start": 22.88,
+      "end": 23.1,
+      "probability": 0.95361328125
+    },
+    {
+      "word": " the",
+      "start": 23.1,
+      "end": 23.26,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " sound",
+      "start": 23.26,
+      "end": 23.48,
+      "probability": 1.0
+    },
+    {
+      "word": " as",
+      "start": 23.48,
+      "end": 23.62,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " a",
+      "start": 23.62,
+      "end": 23.7,
+      "probability": 1.0
+    },
+    {
+      "word": " picture.",
+      "start": 23.7,
+      "end": 24.02,
+      "probability": 1.0
+    },
+    {
+      "word": " Zoom",
+      "start": 24.44,
+      "end": 24.94,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " into",
+      "start": 24.94,
+      "end": 25.2,
+      "probability": 0.92431640625
+    },
+    {
+      "word": " the",
+      "start": 25.2,
+      "end": 25.34,
+      "probability": 1.0
+    },
+    {
+      "word": " low",
+      "start": 25.34,
+      "end": 25.52,
+      "probability": 0.9951171875
+    },
+    {
+      "word": " notes.",
+      "start": 25.52,
+      "end": 25.9,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " There,",
+      "start": 26.18,
+      "end": 26.54,
+      "probability": 0.9912109375
+    },
+    {
+      "word": " a",
+      "start": 26.96,
+      "end": 27.16,
+      "probability": 1.0
+    },
+    {
+      "word": " propeller",
+      "start": 27.16,
+      "end": 27.56,
+      "probability": 0.9931640625
+    },
+    {
+      "word": " plane,",
+      "start": 27.56,
+      "end": 27.92,
+      "probability": 1.0
+    },
+    {
+      "word": " too",
+      "start": 28.14,
+      "end": 28.46,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " quiet",
+      "start": 28.46,
+      "end": 28.8,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " to",
+      "start": 28.8,
+      "end": 28.98,
+      "probability": 1.0
+    },
+    {
+      "word": " hear.",
+      "start": 28.98,
+      "end": 29.22,
+      "probability": 1.0
+    },
+    {
+      "word": " 920",
+      "start": 30.36,
+      "end": 30.92,
+      "probability": 0.93310546875
+    },
+    {
+      "word": " seconds",
+      "start": 30.92,
+      "end": 31.4,
+      "probability": 0.99267578125
+    },
+    {
+      "word": " later,",
+      "start": 31.4,
+      "end": 31.78,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " a",
+      "start": 32.02,
+      "end": 32.16,
+      "probability": 0.994140625
+    },
+    {
+      "word": " second,",
+      "start": 32.16,
+      "end": 32.56,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " louder",
+      "start": 32.72,
+      "end": 33.12,
+      "probability": 0.99462890625
+    },
+    {
+      "word": " one.",
+      "start": 33.12,
+      "end": 33.38,
+      "probability": 0.99609375
+    },
+    {
+      "word": " You",
+      "start": 33.8,
+      "end": 34.36,
+      "probability": 0.9892578125
+    },
+    {
+      "word": " already",
+      "start": 34.36,
+      "end": 34.68,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " know",
+      "start": 34.68,
+      "end": 34.92,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " this",
+      "start": 34.92,
+      "end": 35.14,
+      "probability": 0.99609375
+    },
+    {
+      "word": " shape.",
+      "start": 35.14,
+      "end": 35.42,
+      "probability": 0.98974609375
+    },
+    {
+      "word": " Coming",
+      "start": 36.68,
+      "end": 37.24,
+      "probability": 0.98681640625
+    },
+    {
+      "word": " at",
+      "start": 37.24,
+      "end": 37.44,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " you,",
+      "start": 37.44,
+      "end": 37.66,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " a",
+      "start": 37.82,
+      "end": 38.08,
+      "probability": 0.99609375
+    },
+    {
+      "word": " sound",
+      "start": 38.08,
+      "end": 38.44,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " gets",
+      "start": 38.44,
+      "end": 38.66,
+      "probability": 0.98876953125
+    },
+    {
+      "word": " squeezed",
+      "start": 38.66,
+      "end": 39.0,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " higher.",
+      "start": 39.0,
+      "end": 39.48,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " Going",
+      "start": 39.74,
+      "end": 40.22,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " away,",
+      "start": 40.22,
+      "end": 40.62,
+      "probability": 1.0
+    },
+    {
+      "word": " it",
+      "start": 40.86,
+      "end": 40.94,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " stretches",
+      "start": 40.94,
+      "end": 41.26,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " lower.",
+      "start": 41.26,
+      "end": 41.64,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " The",
+      "start": 42.44,
+      "end": 43.0,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " faster",
+      "start": 43.0,
+      "end": 43.3,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " it",
+      "start": 43.3,
+      "end": 43.46,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " goes,",
+      "start": 43.46,
+      "end": 43.74,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " the",
+      "start": 43.88,
+      "end": 43.92,
+      "probability": 1.0
+    },
+    {
+      "word": " bigger",
+      "start": 43.92,
+      "end": 44.1,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " the",
+      "start": 44.1,
+      "end": 44.24,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " drop.",
+      "start": 44.24,
+      "end": 44.52,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " The",
+      "start": 45.0,
+      "end": 45.52,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " closer",
+      "start": 45.52,
+      "end": 45.8,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " it",
+      "start": 45.8,
+      "end": 46.0,
+      "probability": 1.0
+    },
+    {
+      "word": " passes,",
+      "start": 46.0,
+      "end": 46.32,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " the",
+      "start": 46.5,
+      "end": 46.58,
+      "probability": 1.0
+    },
+    {
+      "word": " sharper",
+      "start": 46.58,
+      "end": 46.9,
+      "probability": 1.0
+    },
+    {
+      "word": " the",
+      "start": 46.9,
+      "end": 47.06,
+      "probability": 1.0
+    },
+    {
+      "word": " drop.",
+      "start": 47.06,
+      "end": 47.3,
+      "probability": 1.0
+    },
+    {
+      "word": " So",
+      "start": 48.44,
+      "end": 49.0,
+      "probability": 0.998046875
+    },
+    {
+      "word": " the",
+      "start": 49.0,
+      "end": 49.12,
+      "probability": 0.97705078125
+    },
+    {
+      "word": " line",
+      "start": 49.12,
+      "end": 49.4,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " gives",
+      "start": 49.4,
+      "end": 49.62,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " the",
+      "start": 49.62,
+      "end": 49.76,
+      "probability": 1.0
+    },
+    {
+      "word": " plane",
+      "start": 49.76,
+      "end": 50.04,
+      "probability": 0.97314453125
+    },
+    {
+      "word": " speed",
+      "start": 50.04,
+      "end": 50.52,
+      "probability": 0.98193359375
+    },
+    {
+      "word": " and",
+      "start": 50.52,
+      "end": 51.24,
+      "probability": 0.5146484375
+    },
+    {
+      "word": " how",
+      "start": 51.24,
+      "end": 51.5,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " close",
+      "start": 51.5,
+      "end": 51.78,
+      "probability": 1.0
+    },
+    {
+      "word": " it",
+      "start": 51.78,
+      "end": 51.94,
+      "probability": 1.0
+    },
+    {
+      "word": " came.",
+      "start": 51.94,
+      "end": 52.3,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " But",
+      "start": 52.72,
+      "end": 53.24,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " which",
+      "start": 53.24,
+      "end": 53.5,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " plane?",
+      "start": 53.5,
+      "end": 53.9,
+      "probability": 1.0
+    },
+    {
+      "word": " Planes",
+      "start": 54.24,
+      "end": 54.8,
+      "probability": 0.97314453125
+    },
+    {
+      "word": " over",
+      "start": 54.8,
+      "end": 55.0,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " America",
+      "start": 55.0,
+      "end": 55.44,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " broadcast",
+      "start": 55.44,
+      "end": 55.86,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " where",
+      "start": 55.86,
+      "end": 56.18,
+      "probability": 0.998046875
+    },
+    {
+      "word": " they",
+      "start": 56.18,
+      "end": 56.32,
+      "probability": 1.0
+    },
+    {
+      "word": " are,",
+      "start": 56.32,
+      "end": 56.58,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " every",
+      "start": 56.76,
+      "end": 57.2,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " second.",
+      "start": 57.2,
+      "end": 57.66,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " Air",
+      "start": 57.66,
+      "end": 58.4,
+      "probability": 0.0257720947265625
+    },
+    {
+      "word": " liners",
+      "start": 58.4,
+      "end": 58.76,
+      "probability": 0.76708984375
+    },
+    {
+      "word": " and",
+      "start": 58.76,
+      "end": 59.42,
+      "probability": 0.759765625
+    },
+    {
+      "word": " over",
+      "start": 59.42,
+      "end": 59.7,
+      "probability": 0.98779296875
+    },
+    {
+      "word": " 100",
+      "start": 59.7,
+      "end": 60.0,
+      "probability": 0.1964111328125
+    },
+    {
+      "word": ",000",
+      "start": 60.0,
+      "end": 60.4,
+      "probability": 0.953125
+    },
+    {
+      "word": " private",
+      "start": 60.4,
+      "end": 60.68,
+      "probability": 0.9931640625
+    },
+    {
+      "word": " planes.",
+      "start": 60.68,
+      "end": 61.12,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " It's",
+      "start": 61.4,
+      "end": 61.96,
+      "probability": 0.98974609375
+    },
+    {
+      "word": " all",
+      "start": 61.96,
+      "end": 62.08,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " recorded.",
+      "start": 62.08,
+      "end": 62.56,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " So",
+      "start": 62.76,
+      "end": 63.04,
+      "probability": 0.982421875
+    },
+    {
+      "word": " you",
+      "start": 63.04,
+      "end": 63.14,
+      "probability": 0.9501953125
+    },
+    {
+      "word": " download",
+      "start": 63.14,
+      "end": 63.44,
+      "probability": 0.99609375
+    },
+    {
+      "word": " that",
+      "start": 63.44,
+      "end": 63.72,
+      "probability": 0.99169921875
+    },
+    {
+      "word": " whole",
+      "start": 63.72,
+      "end": 63.92,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " day.",
+      "start": 63.92,
+      "end": 64.18,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " The",
+      "start": 64.72,
+      "end": 64.84,
+      "probability": 0.99169921875
+    },
+    {
+      "word": " sound",
+      "start": 64.84,
+      "end": 65.12,
+      "probability": 0.99609375
+    },
+    {
+      "word": " is",
+      "start": 65.12,
+      "end": 65.3,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " a",
+      "start": 65.3,
+      "end": 65.4,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " propeller.",
+      "start": 65.4,
+      "end": 65.82,
+      "probability": 0.97705078125
+    },
+    {
+      "word": " So",
+      "start": 66.3,
+      "end": 66.4,
+      "probability": 0.9931640625
+    },
+    {
+      "word": " out",
+      "start": 66.4,
+      "end": 66.66,
+      "probability": 0.98095703125
+    },
+    {
+      "word": " go",
+      "start": 66.66,
+      "end": 66.82,
+      "probability": 0.982421875
+    },
+    {
+      "word": " the",
+      "start": 66.82,
+      "end": 66.98,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " jets.",
+      "start": 66.98,
+      "end": 67.28,
+      "probability": 0.95166015625
+    },
+    {
+      "word": " Then",
+      "start": 67.9,
+      "end": 68.24,
+      "probability": 0.99169921875
+    },
+    {
+      "word": " you",
+      "start": 68.24,
+      "end": 68.42,
+      "probability": 0.9873046875
+    },
+    {
+      "word": " ask",
+      "start": 68.42,
+      "end": 68.7,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " every",
+      "start": 68.7,
+      "end": 69.04,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " spot",
+      "start": 69.04,
+      "end": 69.38,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " in",
+      "start": 69.38,
+      "end": 69.66,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " the",
+      "start": 69.66,
+      "end": 69.78,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " country.",
+      "start": 69.78,
+      "end": 70.12,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " Would",
+      "start": 70.34,
+      "end": 70.72,
+      "probability": 0.97802734375
+    },
+    {
+      "word": " you",
+      "start": 70.72,
+      "end": 70.82,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " hear",
+      "start": 70.82,
+      "end": 71.0,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " a",
+      "start": 71.0,
+      "end": 71.1,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " plane",
+      "start": 71.1,
+      "end": 71.32,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " like",
+      "start": 71.32,
+      "end": 71.5,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " that?",
+      "start": 71.5,
+      "end": 71.8,
+      "probability": 1.0
+    },
+    {
+      "word": " And",
+      "start": 71.98,
+      "end": 72.38,
+      "probability": 0.98876953125
+    },
+    {
+      "word": " 920",
+      "start": 72.38,
+      "end": 73.24,
+      "probability": 0.98876953125
+    },
+    {
+      "word": " seconds",
+      "start": 73.24,
+      "end": 73.6,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " later,",
+      "start": 73.6,
+      "end": 73.94,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " the",
+      "start": 73.94,
+      "end": 74.2,
+      "probability": 0.998046875
+    },
+    {
+      "word": " other",
+      "start": 74.2,
+      "end": 74.4,
+      "probability": 1.0
+    },
+    {
+      "word": " one?",
+      "start": 74.4,
+      "end": 74.68,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " For",
+      "start": 74.68,
+      "end": 75.52,
+      "probability": 0.79638671875
+    },
+    {
+      "word": " this",
+      "start": 75.52,
+      "end": 75.74,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " clip,",
+      "start": 75.74,
+      "end": 76.02,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " about",
+      "start": 76.44,
+      "end": 76.58,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " 70",
+      "start": 76.58,
+      "end": 76.96,
+      "probability": 0.9970703125
+    },
+    {
+      "word": ",000",
+      "start": 76.96,
+      "end": 77.34,
+      "probability": 0.9951171875
+    },
+    {
+      "word": " spots",
+      "start": 77.34,
+      "end": 77.7,
+      "probability": 0.9951171875
+    },
+    {
+      "word": " said",
+      "start": 77.7,
+      "end": 77.96,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " yes.",
+      "start": 77.96,
+      "end": 78.28,
+      "probability": 0.9736328125
+    },
+    {
+      "word": " Mostly",
+      "start": 78.56,
+      "end": 79.02,
+      "probability": 0.982421875
+    },
+    {
+      "word": " around",
+      "start": 79.02,
+      "end": 79.28,
+      "probability": 0.9951171875
+    },
+    {
+      "word": " airports.",
+      "start": 79.28,
+      "end": 79.7,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " But",
+      "start": 80.3,
+      "end": 80.64,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " this",
+      "start": 80.64,
+      "end": 80.86,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " clip",
+      "start": 80.86,
+      "end": 81.1,
+      "probability": 0.998046875
+    },
+    {
+      "word": " has",
+      "start": 81.1,
+      "end": 81.34,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " 15",
+      "start": 81.34,
+      "end": 81.76,
+      "probability": 0.9921875
+    },
+    {
+      "word": " minutes",
+      "start": 81.76,
+      "end": 82.06,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " of",
+      "start": 82.06,
+      "end": 82.24,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " nothing",
+      "start": 82.24,
+      "end": 82.56,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " between",
+      "start": 82.56,
+      "end": 83.18,
+      "probability": 0.96337890625
+    },
+    {
+      "word": " the",
+      "start": 83.18,
+      "end": 83.44,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " two",
+      "start": 83.44,
+      "end": 83.6,
+      "probability": 0.98876953125
+    },
+    {
+      "word": " planes.",
+      "start": 83.6,
+      "end": 83.98,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " And",
+      "start": 84.8,
+      "end": 85.44,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " silence",
+      "start": 85.44,
+      "end": 85.84,
+      "probability": 0.998046875
+    },
+    {
+      "word": " is",
+      "start": 85.84,
+      "end": 86.06,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " a",
+      "start": 86.06,
+      "end": 86.16,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " clue,",
+      "start": 86.16,
+      "end": 86.36,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " too.",
+      "start": 86.38,
+      "end": 86.68,
+      "probability": 1.0
+    },
+    {
+      "word": " Every",
+      "start": 87.22,
+      "end": 87.64,
+      "probability": 0.9951171875
+    },
+    {
+      "word": " spot",
+      "start": 87.64,
+      "end": 87.96,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " that",
+      "start": 87.96,
+      "end": 88.16,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " would",
+      "start": 88.16,
+      "end": 88.28,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " have",
+      "start": 88.28,
+      "end": 88.4,
+      "probability": 0.98828125
+    },
+    {
+      "word": " heard",
+      "start": 88.4,
+      "end": 88.58,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " a",
+      "start": 88.58,
+      "end": 88.76,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " third",
+      "start": 88.76,
+      "end": 88.94,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " plane,",
+      "start": 88.94,
+      "end": 89.38,
+      "probability": 1.0
+    },
+    {
+      "word": " gone.",
+      "start": 89.52,
+      "end": 89.94,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " 15",
+      "start": 90.38,
+      "end": 90.82,
+      "probability": 0.99658203125
+    },
+    {
+      "word": ",000",
+      "start": 90.82,
+      "end": 91.24,
+      "probability": 1.0
+    },
+    {
+      "word": " left.",
+      "start": 91.24,
+      "end": 91.6,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " One",
+      "start": 92.26,
+      "end": 92.74,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " thing",
+      "start": 92.74,
+      "end": 92.96,
+      "probability": 1.0
+    },
+    {
+      "word": " was",
+      "start": 92.96,
+      "end": 93.16,
+      "probability": 1.0
+    },
+    {
+      "word": " left.",
+      "start": 93.16,
+      "end": 93.5,
+      "probability": 1.0
+    },
+    {
+      "word": " The",
+      "start": 93.76,
+      "end": 93.92,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " shape",
+      "start": 93.92,
+      "end": 94.18,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " of",
+      "start": 94.18,
+      "end": 94.34,
+      "probability": 1.0
+    },
+    {
+      "word": " the",
+      "start": 94.34,
+      "end": 94.46,
+      "probability": 1.0
+    },
+    {
+      "word": " line.",
+      "start": 94.46,
+      "end": 94.82,
+      "probability": 1.0
+    },
+    {
+      "word": " Real",
+      "start": 95.26,
+      "end": 95.58,
+      "probability": 0.98974609375
+    },
+    {
+      "word": " planes",
+      "start": 95.58,
+      "end": 95.98,
+      "probability": 1.0
+    },
+    {
+      "word": " turn,",
+      "start": 95.98,
+      "end": 96.32,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " climb",
+      "start": 96.54,
+      "end": 96.86,
+      "probability": 1.0
+    },
+    {
+      "word": " and",
+      "start": 96.86,
+      "end": 97.08,
+      "probability": 0.42626953125
+    },
+    {
+      "word": " change",
+      "start": 97.08,
+      "end": 97.44,
+      "probability": 1.0
+    },
+    {
+      "word": " speed.",
+      "start": 97.44,
+      "end": 97.82,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " Every",
+      "start": 98.24,
+      "end": 98.66,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " wobble",
+      "start": 98.66,
+      "end": 99.0,
+      "probability": 1.0
+    },
+    {
+      "word": " bends",
+      "start": 99.0,
+      "end": 99.32,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " the",
+      "start": 99.32,
+      "end": 99.52,
+      "probability": 1.0
+    },
+    {
+      "word": " line.",
+      "start": 99.52,
+      "end": 99.86,
+      "probability": 1.0
+    },
+    {
+      "word": " So",
+      "start": 100.5,
+      "end": 100.78,
+      "probability": 0.94189453125
+    },
+    {
+      "word": " for",
+      "start": 100.78,
+      "end": 101.02,
+      "probability": 0.685546875
+    },
+    {
+      "word": " every",
+      "start": 101.02,
+      "end": 101.26,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " spot,",
+      "start": 101.26,
+      "end": 101.58,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " you",
+      "start": 101.8,
+      "end": 102.06,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " work",
+      "start": 102.06,
+      "end": 102.3,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " out",
+      "start": 102.3,
+      "end": 102.4,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " the",
+      "start": 102.4,
+      "end": 102.52,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " exact",
+      "start": 102.52,
+      "end": 102.78,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " line",
+      "start": 102.78,
+      "end": 102.98,
+      "probability": 1.0
+    },
+    {
+      "word": " it",
+      "start": 102.98,
+      "end": 103.14,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " would",
+      "start": 103.14,
+      "end": 103.24,
+      "probability": 1.0
+    },
+    {
+      "word": " have",
+      "start": 103.24,
+      "end": 103.34,
+      "probability": 0.99169921875
+    },
+    {
+      "word": " heard.",
+      "start": 103.34,
+      "end": 103.64,
+      "probability": 1.0
+    },
+    {
+      "word": " There's",
+      "start": 104.14,
+      "end": 104.66,
+      "probability": 0.998046875
+    },
+    {
+      "word": " a",
+      "start": 104.66,
+      "end": 104.74,
+      "probability": 1.0
+    },
+    {
+      "word": " trap.",
+      "start": 104.74,
+      "end": 105.08,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " Sound",
+      "start": 105.54,
+      "end": 105.88,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " is",
+      "start": 105.88,
+      "end": 106.06,
+      "probability": 1.0
+    },
+    {
+      "word": " slow.",
+      "start": 106.06,
+      "end": 106.36,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " By",
+      "start": 106.62,
+      "end": 107.0,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " the",
+      "start": 107.0,
+      "end": 107.14,
+      "probability": 1.0
+    },
+    {
+      "word": " time",
+      "start": 107.14,
+      "end": 107.34,
+      "probability": 1.0
+    },
+    {
+      "word": " you",
+      "start": 107.34,
+      "end": 107.5,
+      "probability": 1.0
+    },
+    {
+      "word": " hear",
+      "start": 107.5,
+      "end": 107.66,
+      "probability": 1.0
+    },
+    {
+      "word": " a",
+      "start": 107.66,
+      "end": 107.8,
+      "probability": 1.0
+    },
+    {
+      "word": " plane,",
+      "start": 107.8,
+      "end": 108.04,
+      "probability": 0.9951171875
+    },
+    {
+      "word": " it's",
+      "start": 108.3,
+      "end": 108.58,
+      "probability": 1.0
+    },
+    {
+      "word": " already",
+      "start": 108.58,
+      "end": 108.94,
+      "probability": 0.9873046875
+    },
+    {
+      "word": " somewhere",
+      "start": 108.94,
+      "end": 109.36,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " else.",
+      "start": 109.36,
+      "end": 109.72,
+      "probability": 1.0
+    },
+    {
+      "word": " Miss",
+      "start": 110.26,
+      "end": 110.48,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " that.",
+      "start": 110.48,
+      "end": 110.82,
+      "probability": 0.9638671875
+    },
+    {
+      "word": " And",
+      "start": 111.04,
+      "end": 111.4,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " the",
+      "start": 111.4,
+      "end": 111.52,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " search",
+      "start": 111.52,
+      "end": 111.82,
+      "probability": 1.0
+    },
+    {
+      "word": " fails.",
+      "start": 111.82,
+      "end": 112.26,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " Then",
+      "start": 112.88,
+      "end": 113.36,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " you",
+      "start": 113.36,
+      "end": 113.56,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " lay",
+      "start": 113.56,
+      "end": 113.76,
+      "probability": 1.0
+    },
+    {
+      "word": " every",
+      "start": 113.76,
+      "end": 114.14,
+      "probability": 1.0
+    },
+    {
+      "word": " predicted",
+      "start": 114.14,
+      "end": 114.58,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " line",
+      "start": 114.58,
+      "end": 114.88,
+      "probability": 1.0
+    },
+    {
+      "word": " over",
+      "start": 114.88,
+      "end": 115.14,
+      "probability": 1.0
+    },
+    {
+      "word": " the",
+      "start": 115.14,
+      "end": 115.28,
+      "probability": 1.0
+    },
+    {
+      "word": " real",
+      "start": 115.28,
+      "end": 115.5,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " ones.",
+      "start": 115.5,
+      "end": 115.78,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " One",
+      "start": 116.12,
+      "end": 116.58,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " spot",
+      "start": 116.58,
+      "end": 116.84,
+      "probability": 1.0
+    },
+    {
+      "word": " matched",
+      "start": 116.84,
+      "end": 117.22,
+      "probability": 1.0
+    },
+    {
+      "word": " both",
+      "start": 117.22,
+      "end": 117.5,
+      "probability": 1.0
+    },
+    {
+      "word": " planes",
+      "start": 117.5,
+      "end": 117.82,
+      "probability": 1.0
+    },
+    {
+      "word": " perfectly.",
+      "start": 117.82,
+      "end": 118.36,
+      "probability": 1.0
+    },
+    {
+      "word": " Second",
+      "start": 118.96,
+      "end": 119.18,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " place",
+      "start": 119.18,
+      "end": 119.5,
+      "probability": 1.0
+    },
+    {
+      "word": " wasn't",
+      "start": 119.5,
+      "end": 119.8,
+      "probability": 1.0
+    },
+    {
+      "word": " close.",
+      "start": 119.8,
+      "end": 120.1,
+      "probability": 1.0
+    },
+    {
+      "word": " Then",
+      "start": 120.1,
+      "end": 121.08,
+      "probability": 0.85205078125
+    },
+    {
+      "word": " a",
+      "start": 121.08,
+      "end": 121.2,
+      "probability": 0.99462890625
+    },
+    {
+      "word": " harder",
+      "start": 121.2,
+      "end": 121.44,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " test.",
+      "start": 121.44,
+      "end": 121.84,
+      "probability": 1.0
+    },
+    {
+      "word": " One",
+      "start": 122.08,
+      "end": 122.42,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " minute",
+      "start": 122.42,
+      "end": 122.68,
+      "probability": 1.0
+    },
+    {
+      "word": " of",
+      "start": 122.68,
+      "end": 122.84,
+      "probability": 1.0
+    },
+    {
+      "word": " audio.",
+      "start": 122.84,
+      "end": 123.2,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " One",
+      "start": 123.54,
+      "end": 123.82,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " faint",
+      "start": 123.82,
+      "end": 124.12,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " plane.",
+      "start": 124.12,
+      "end": 124.46,
+      "probability": 0.85107421875
+    },
+    {
+      "word": " And",
+      "start": 124.64,
+      "end": 124.88,
+      "probability": 0.9921875
+    },
+    {
+      "word": " the",
+      "start": 124.88,
+      "end": 125.0,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " time",
+      "start": 125.0,
+      "end": 125.26,
+      "probability": 1.0
+    },
+    {
+      "word": " it",
+      "start": 125.26,
+      "end": 125.42,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " was",
+      "start": 125.42,
+      "end": 125.56,
+      "probability": 1.0
+    },
+    {
+      "word": " recorded.",
+      "start": 125.56,
+      "end": 125.96,
+      "probability": 1.0
+    },
+    {
+      "word": " The",
+      "start": 126.3,
+      "end": 126.78,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " whole",
+      "start": 126.78,
+      "end": 127.02,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " country",
+      "start": 127.02,
+      "end": 127.44,
+      "probability": 1.0
+    },
+    {
+      "word": " again.",
+      "start": 127.44,
+      "end": 127.72,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " The",
+      "start": 128.04,
+      "end": 128.38,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " same",
+      "start": 128.38,
+      "end": 128.58,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " spot",
+      "start": 128.58,
+      "end": 128.84,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " came",
+      "start": 128.84,
+      "end": 129.06,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " first.",
+      "start": 129.06,
+      "end": 129.44,
+      "probability": 1.0
+    },
+    {
+      "word": " That's",
+      "start": 129.86,
+      "end": 130.42,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " one",
+      "start": 130.42,
+      "end": 130.62,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " square.",
+      "start": 130.62,
+      "end": 131.0,
+      "probability": 1.0
+    },
+    {
+      "word": " 100",
+      "start": 131.32,
+      "end": 131.66,
+      "probability": 0.73486328125
+    },
+    {
+      "word": " meters",
+      "start": 131.66,
+      "end": 131.98,
+      "probability": 0.65283203125
+    },
+    {
+      "word": " wide.",
+      "start": 131.98,
+      "end": 132.34,
+      "probability": 1.0
+    },
+    {
+      "word": " America",
+      "start": 132.7,
+      "end": 133.26,
+      "probability": 0.998046875
+    },
+    {
+      "word": " has",
+      "start": 133.26,
+      "end": 133.5,
+      "probability": 1.0
+    },
+    {
+      "word": " more",
+      "start": 133.5,
+      "end": 133.66,
+      "probability": 1.0
+    },
+    {
+      "word": " than",
+      "start": 133.66,
+      "end": 133.8,
+      "probability": 1.0
+    },
+    {
+      "word": " 750",
+      "start": 133.8,
+      "end": 134.78,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " million",
+      "start": 134.78,
+      "end": 135.22,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " of",
+      "start": 135.22,
+      "end": 135.42,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " them.",
+      "start": 135.42,
+      "end": 135.56,
+      "probability": 1.0
+    },
+    {
+      "word": " The",
+      "start": 135.96,
+      "end": 136.24,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " sound",
+      "start": 136.24,
+      "end": 136.48,
+      "probability": 0.9521484375
+    },
+    {
+      "word": " picked",
+      "start": 136.48,
+      "end": 136.68,
+      "probability": 0.98583984375
+    },
+    {
+      "word": " the",
+      "start": 136.68,
+      "end": 136.82,
+      "probability": 1.0
+    },
+    {
+      "word": " right",
+      "start": 136.82,
+      "end": 137.02,
+      "probability": 1.0
+    },
+    {
+      "word": " one.",
+      "start": 137.02,
+      "end": 137.32,
+      "probability": 1.0
+    },
+    {
+      "word": " Street",
+      "start": 138.02,
+      "end": 138.54,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " View",
+      "start": 138.54,
+      "end": 138.82,
+      "probability": 0.7314453125
+    },
+    {
+      "word": " did",
+      "start": 138.82,
+      "end": 139.04,
+      "probability": 1.0
+    },
+    {
+      "word": " the",
+      "start": 139.04,
+      "end": 139.16,
+      "probability": 1.0
+    },
+    {
+      "word": " rest.",
+      "start": 139.16,
+      "end": 139.52,
+      "probability": 1.0
+    },
+    {
+      "word": " The",
+      "start": 139.88,
+      "end": 140.2,
+      "probability": 0.99853515625
+    },
+    {
+      "word": " same",
+      "start": 140.2,
+      "end": 140.4,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " trees.",
+      "start": 140.4,
+      "end": 140.8,
+      "probability": 1.0
+    },
+    {
+      "word": " And",
+      "start": 141.06,
+      "end": 141.5,
+      "probability": 0.998046875
+    },
+    {
+      "word": " on",
+      "start": 141.5,
+      "end": 141.64,
+      "probability": 0.9951171875
+    },
+    {
+      "word": " a",
+      "start": 141.64,
+      "end": 141.78,
+      "probability": 1.0
+    },
+    {
+      "word": " pole.",
+      "start": 141.78,
+      "end": 142.02,
+      "probability": 0.970703125
+    },
+    {
+      "word": " The",
+      "start": 142.2,
+      "end": 142.48,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " camera.",
+      "start": 142.48,
+      "end": 142.8,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " So",
+      "start": 143.38,
+      "end": 143.88,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " how",
+      "start": 143.88,
+      "end": 144.06,
+      "probability": 0.98486328125
+    },
+    {
+      "word": " do",
+      "start": 144.06,
+      "end": 144.18,
+      "probability": 1.0
+    },
+    {
+      "word": " you",
+      "start": 144.18,
+      "end": 144.28,
+      "probability": 1.0
+    },
+    {
+      "word": " hide",
+      "start": 144.28,
+      "end": 144.58,
+      "probability": 1.0
+    },
+    {
+      "word": " it?",
+      "start": 144.58,
+      "end": 144.8,
+      "probability": 1.0
+    },
+    {
+      "word": " Cut",
+      "start": 145.24,
+      "end": 145.62,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " the",
+      "start": 145.62,
+      "end": 145.78,
+      "probability": 1.0
+    },
+    {
+      "word": " low",
+      "start": 145.78,
+      "end": 145.94,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " notes?",
+      "start": 145.94,
+      "end": 146.34,
+      "probability": 1.0
+    },
+    {
+      "word": " Save",
+      "start": 146.74,
+      "end": 147.16,
+      "probability": 0.99755859375
+    },
+    {
+      "word": " it",
+      "start": 147.16,
+      "end": 147.26,
+      "probability": 1.0
+    },
+    {
+      "word": " as",
+      "start": 147.26,
+      "end": 147.38,
+      "probability": 1.0
+    },
+    {
+      "word": " an",
+      "start": 147.38,
+      "end": 147.48,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " MP3?",
+      "start": 147.48,
+      "end": 147.96,
+      "probability": 0.77734375
+    },
+    {
+      "word": " Turn",
+      "start": 148.42,
+      "end": 148.7,
+      "probability": 0.8544921875
+    },
+    {
+      "word": " it",
+      "start": 148.7,
+      "end": 148.86,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " up.",
+      "start": 148.86,
+      "end": 149.06,
+      "probability": 1.0
+    },
+    {
+      "word": " And",
+      "start": 149.2,
+      "end": 149.64,
+      "probability": 0.998046875
+    },
+    {
+      "word": " the",
+      "start": 149.64,
+      "end": 149.74,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " line",
+      "start": 149.74,
+      "end": 149.92,
+      "probability": 1.0
+    },
+    {
+      "word": " comes",
+      "start": 149.92,
+      "end": 150.16,
+      "probability": 1.0
+    },
+    {
+      "word": " back.",
+      "start": 150.16,
+      "end": 150.48,
+      "probability": 1.0
+    },
+    {
+      "word": " Talk",
+      "start": 151.12,
+      "end": 151.44,
+      "probability": 0.998046875
+    },
+    {
+      "word": " over",
+      "start": 151.44,
+      "end": 151.7,
+      "probability": 1.0
+    },
+    {
+      "word": " it?",
+      "start": 151.7,
+      "end": 151.88,
+      "probability": 1.0
+    },
+    {
+      "word": " There's",
+      "start": 152.04,
+      "end": 152.52,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " been",
+      "start": 152.52,
+      "end": 152.62,
+      "probability": 1.0
+    },
+    {
+      "word": " a",
+      "start": 152.62,
+      "end": 152.74,
+      "probability": 1.0
+    },
+    {
+      "word": " plane",
+      "start": 152.74,
+      "end": 153.0,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " under",
+      "start": 153.0,
+      "end": 153.22,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " my",
+      "start": 153.22,
+      "end": 153.4,
+      "probability": 1.0
+    },
+    {
+      "word": " voice.",
+      "start": 153.4,
+      "end": 153.78,
+      "probability": 1.0
+    },
+    {
+      "word": " For",
+      "start": 154.0,
+      "end": 154.36,
+      "probability": 0.99658203125
+    },
+    {
+      "word": " the",
+      "start": 154.36,
+      "end": 154.48,
+      "probability": 1.0
+    },
+    {
+      "word": " last",
+      "start": 154.48,
+      "end": 154.72,
+      "probability": 1.0
+    },
+    {
+      "word": " 20",
+      "start": 154.72,
+      "end": 155.0,
+      "probability": 0.9931640625
+    },
+    {
+      "word": " seconds.",
+      "start": 155.0,
+      "end": 155.42,
+      "probability": 1.0
+    },
+    {
+      "word": " It",
+      "start": 156.16,
+      "end": 156.72,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " even",
+      "start": 156.72,
+      "end": 156.92,
+      "probability": 1.0
+    },
+    {
+      "word": " comes",
+      "start": 156.92,
+      "end": 157.22,
+      "probability": 1.0
+    },
+    {
+      "word": " through",
+      "start": 157.22,
+      "end": 157.38,
+      "probability": 1.0
+    },
+    {
+      "word": " a",
+      "start": 157.38,
+      "end": 157.54,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " phone",
+      "start": 157.54,
+      "end": 157.76,
+      "probability": 1.0
+    },
+    {
+      "word": " call.",
+      "start": 157.76,
+      "end": 158.06,
+      "probability": 1.0
+    },
+    {
+      "word": " A",
+      "start": 158.76,
+      "end": 159.26,
+      "probability": 1.0
+    },
+    {
+      "word": " YouTuber",
+      "start": 159.26,
+      "end": 159.56,
+      "probability": 0.9970703125
+    },
+    {
+      "word": " called",
+      "start": 159.56,
+      "end": 159.96,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " Colstow",
+      "start": 159.96,
+      "end": 160.48,
+      "probability": 0.87451171875
+    },
+    {
+      "word": " built",
+      "start": 160.48,
+      "end": 160.76,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " all",
+      "start": 160.76,
+      "end": 160.96,
+      "probability": 1.0
+    },
+    {
+      "word": " of",
+      "start": 160.96,
+      "end": 161.06,
+      "probability": 1.0
+    },
+    {
+      "word": " this.",
+      "start": 161.06,
+      "end": 161.36,
+      "probability": 1.0
+    },
+    {
+      "word": " And",
+      "start": 161.5,
+      "end": 161.94,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " demonstrated",
+      "start": 161.94,
+      "end": 162.48,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " it",
+      "start": 162.48,
+      "end": 162.78,
+      "probability": 1.0
+    },
+    {
+      "word": " on",
+      "start": 162.78,
+      "end": 162.96,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " a",
+      "start": 162.96,
+      "end": 163.08,
+      "probability": 1.0
+    },
+    {
+      "word": " real",
+      "start": 163.08,
+      "end": 163.34,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " security",
+      "start": 163.34,
+      "end": 163.8,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " camera",
+      "start": 163.8,
+      "end": 164.16,
+      "probability": 1.0
+    },
+    {
+      "word": " clip.",
+      "start": 164.16,
+      "end": 164.44,
+      "probability": 1.0
+    },
+    {
+      "word": " It",
+      "start": 164.86,
+      "end": 165.24,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " took",
+      "start": 165.24,
+      "end": 165.38,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " him",
+      "start": 165.38,
+      "end": 165.54,
+      "probability": 1.0
+    },
+    {
+      "word": " months.",
+      "start": 165.54,
+      "end": 165.9,
+      "probability": 1.0
+    },
+    {
+      "word": " And",
+      "start": 166.1,
+      "end": 166.46,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " 5",
+      "start": 166.46,
+      "end": 166.76,
+      "probability": 0.93017578125
+    },
+    {
+      "word": ",000",
+      "start": 166.76,
+      "end": 167.14,
+      "probability": 1.0
+    },
+    {
+      "word": " lines",
+      "start": 167.14,
+      "end": 167.4,
+      "probability": 1.0
+    },
+    {
+      "word": " of",
+      "start": 167.4,
+      "end": 167.56,
+      "probability": 1.0
+    },
+    {
+      "word": " code.",
+      "start": 167.56,
+      "end": 167.88,
+      "probability": 1.0
+    },
+    {
+      "word": " He",
+      "start": 168.08,
+      "end": 168.5,
+      "probability": 0.99609375
+    },
+    {
+      "word": " hasn't",
+      "start": 168.5,
+      "end": 168.8,
+      "probability": 1.0
+    },
+    {
+      "word": " shared",
+      "start": 168.8,
+      "end": 169.04,
+      "probability": 1.0
+    },
+    {
+      "word": " it.",
+      "start": 169.04,
+      "end": 169.26,
+      "probability": 1.0
+    },
+    {
+      "word": " Next",
+      "start": 170.1,
+      "end": 170.66,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " time",
+      "start": 170.66,
+      "end": 170.86,
+      "probability": 1.0
+    },
+    {
+      "word": " a",
+      "start": 170.86,
+      "end": 171.02,
+      "probability": 1.0
+    },
+    {
+      "word": " small",
+      "start": 171.02,
+      "end": 171.26,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " plane",
+      "start": 171.26,
+      "end": 171.62,
+      "probability": 1.0
+    },
+    {
+      "word": " flies",
+      "start": 171.62,
+      "end": 171.96,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " over,",
+      "start": 171.96,
+      "end": 172.32,
+      "probability": 1.0
+    },
+    {
+      "word": " you",
+      "start": 172.52,
+      "end": 173.04,
+      "probability": 0.99462890625
+    },
+    {
+      "word": " might",
+      "start": 173.04,
+      "end": 173.24,
+      "probability": 1.0
+    },
+    {
+      "word": " be",
+      "start": 173.24,
+      "end": 173.4,
+      "probability": 1.0
+    },
+    {
+      "word": " the",
+      "start": 173.4,
+      "end": 173.56,
+      "probability": 1.0
+    },
+    {
+      "word": " only",
+      "start": 173.56,
+      "end": 173.82,
+      "probability": 1.0
+    },
+    {
+      "word": " place",
+      "start": 173.82,
+      "end": 174.18,
+      "probability": 1.0
+    },
+    {
+      "word": " on",
+      "start": 174.18,
+      "end": 174.36,
+      "probability": 1.0
+    },
+    {
+      "word": " Earth",
+      "start": 174.36,
+      "end": 174.56,
+      "probability": 0.56201171875
+    },
+    {
+      "word": " hearing",
+      "start": 174.56,
+      "end": 174.88,
+      "probability": 0.99951171875
+    },
+    {
+      "word": " it.",
+      "start": 174.88,
+      "end": 175.14,
+      "probability": 1.0
+    },
+    {
+      "word": " Exactly",
+      "start": 175.66,
+      "end": 176.22,
+      "probability": 0.9990234375
+    },
+    {
+      "word": " like",
+      "start": 176.22,
+      "end": 176.64,
+      "probability": 1.0
+    },
+    {
+      "word": " that.",
+      "start": 176.64,
+      "end": 176.96,
+      "probability": 1.0
+    }
+  ]
+}

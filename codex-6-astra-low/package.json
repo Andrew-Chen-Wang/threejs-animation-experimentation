@@ -1,0 +1,21 @@
+{
+  "name": "three-recreation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:film": "vite --port 5200 --open /film.html",
+    "build:film": "vite build --config vite.film.config.ts",
+    "render:film": "node render-film.mjs",
+    "check:film": "tsc --noEmit --target ES2022 --module ESNext --moduleResolution bundler --lib ES2022,DOM src/film/main.ts src/film/world.ts --types vite/client",
+    "test:film": "node --experimental-strip-types test-film-physics.mjs"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.187.0",
+    "playwright": "^1.64.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}

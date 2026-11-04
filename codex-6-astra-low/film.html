@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The sound of somewhere</title>
+    <style>
+      @font-face {
+        font-family: Old;
+        src: url("./fonts/OldStandard-Bold.ttf");
+      }
+      @font-face {
+        font-family: Oswald;
+        src: url("./fonts/Oswald-Bold.ttf");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #242720;
+        color: #eee9d8;
+        font:
+          15px Georgia,
+          serif;
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+      }
+      main {
+        height: min(92dvh, 100vw * 16 / 9);
+        aspect-ratio: 9/16;
+        position: relative;
+        box-shadow: 0 18px 70px #0005;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      aside {
+        width: 260px;
+      }
+      h1 {
+        font-size: 38px;
+        line-height: 1.1;
+        font-weight: normal;
+        margin: 0 0 20px;
+      }
+      p {
+        line-height: 1.6;
+        color: #c1c1b1;
+      }
+      button {
+        background: #eee9d8;
+        color: #242720;
+        border: 0;
+        padding: 13px 20px;
+        font: inherit;
+        cursor: pointer;
+      }
+      button:focus-visible,
+      input:focus-visible {
+        outline: 3px solid #bf4a37;
+        outline-offset: 4px;
+      }
+      .controls {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 28px;
+      }
+      select {
+        width: 100%;
+        margin-top: 16px;
+        padding: 8px;
+        background: #eee9d8;
+        color: #242720;
+        border: 0;
+        font:
+          14px Georgia,
+          serif;
+      }
+      input {
+        width: 100%;
+        accent-color: #b5493a;
+        margin-top: 20px;
+      }
+      small {
+        display: block;
+        margin-top: 16px;
+        color: #b8b8aa;
+      }
+      a {
+        color: inherit;
+      }
+      #time {
+        font-variant-numeric: tabular-nums;
+      }
+      @media (max-width: 700px) {
+        body {
+          gap: 0;
+          display: flex;
+          flex-direction: column;
+          background: #e8e5d6;
+        }
+        main {
+          height: min(calc(100dvh - 100px), calc(100vw * 16 / 9));
+          max-width: 100vw;
+          margin: auto;
+          box-shadow: none;
+          flex-shrink: 0;
+        }
+        aside {
+          height: 100px;
+          width: 100%;
+          padding: 8px 20px;
+          background: #242720;
+          flex-shrink: 0;
+        }
+        aside select,
+        aside h1,
+        aside p,
+        aside small {
+          display: none;
+        }
+        .controls {
+          margin: 0;
+          display: inline-flex;
+        }
+        input {
+          width: calc(100% - 160px);
+          margin: 0 0 0 15px;
+        }
+        button {
+          padding: 10px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <canvas
+        id="film"
+        aria-label="Animated film about locating a recording through aircraft sound"
+      ></canvas>
+    </main>
+    <aside>
+      <h1>The sound of somewhere.</h1>
+      <p>An invisible aircraft. A trace in the noise. One place on Earth.</p>
+      <div class="controls">
+        <button id="play">Play film</button><span id="time">0:00 / 2:59</span>
+      </div>
+      <select id="chapter" aria-label="Jump to an explanation"></select>
+      <input
+        id="seek"
+        type="range"
+        min="0"
+        max="178.833"
+        step="0.01"
+        value="0"
+        aria-label="Seek through the film"
+      /><small
+        >Original animation with audio from
+        <a href="https://www.instagram.com/reel/DfSsHlYtpNc/"
+          >the reference reel</a
+        >.<br /><a href="../">Opus version</a> · <a href="watch.html">Rendered finale</a><br />Space to play · arrows to seek</small
+      >
+    </aside>
+    <audio id="audio" src="./film/audio.m4a" preload="auto"></audio>
+    <script type="module" src="/src/film/main.ts"></script>
+  </body>
+</html>

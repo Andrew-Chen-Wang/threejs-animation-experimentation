@@ -1,0 +1,15 @@
+import {cpSync,copyFileSync,mkdirSync,rmSync,writeFileSync} from 'node:fs';
+import {resolve} from 'node:path';
+const site=resolve('_site');
+rmSync(site,{recursive:true,force:true});
+mkdirSync(site,{recursive:true});
+cpSync('dist',site,{recursive:true});
+cpSync('renders',resolve(site,'renders'),{recursive:true});
+const codex=resolve(site,'codex-6-astra-low');
+cpSync('codex-6-astra-low/dist-film',codex,{recursive:true});
+copyFileSync(resolve(codex,'film.html'),resolve(codex,'index.html'));
+copyFileSync('codex-6-astra-low/watch.html',resolve(codex,'watch.html'));
+cpSync('codex-6-astra-low/renders',resolve(codex,'renders'),{recursive:true});
+mkdirSync(resolve(site,'audio'),{recursive:true});
+copyFileSync('codex-6-astra-low/public/film/audio.m4a',resolve(site,'audio/narration.m4a'));
+writeFileSync(resolve(site,'.nojekyll'),'');
