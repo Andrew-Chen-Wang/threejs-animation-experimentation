@@ -1,0 +1,49 @@
+:root {
+  --paper: #ebe5d8;
+  --ink: #23201c;
+  --red: #c23a2c;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --serif: 'Old Standard TT', Georgia, serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #1a1916; overflow: hidden; }
+#app { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+#stage { position: relative; overflow: hidden; background: var(--paper); box-shadow: 0 20px 80px rgba(0,0,0,.5); }
+#gl { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+#frame { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 0 0; pointer-events: none; }
+#hud, #captions { position: absolute; inset: 0; }
+.scene-hud { position: absolute; inset: 0; display: none; }
+
+/* captions */
+.cap { position: absolute; left: 60px; right: 60px; text-align: center; font-family: var(--serif); font-weight: 700;
+  font-size: 66px; line-height: 1.13; color: var(--ink); letter-spacing: 0.2px; will-change: transform, opacity;
+  text-shadow: 0 0 2px var(--paper), 0 0 4px var(--paper), 2px 2px 0 var(--paper), -2px -2px 0 var(--paper), 2px -2px 0 var(--paper), -2px 2px 0 var(--paper), 0 3px 0 var(--paper), 0 -3px 0 var(--paper), 3px 0 0 var(--paper), -3px 0 0 var(--paper), 0 0 18px rgba(235,229,216,.9); }
+.cap .w { display: inline-block; white-space: pre; }
+.cap .em { color: var(--red); }
+.cap.dark { color: #f3eee4; text-shadow: 0 0 3px #111, 0 2px 0 #111, 0 -2px 0 #111, 2px 0 0 #111, -2px 0 0 #111, 0 0 16px rgba(0,0,0,.8); }
+.cap.dark .em { color: #ef5a48; }
+
+/* shared hud bits */
+.mono { font-family: var(--mono); text-transform: uppercase; letter-spacing: 2px; }
+.lbl { position: absolute; font-family: var(--mono); font-size: 22px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
+.lbl.red { color: var(--red); }
+.lbl.light { color: #efe9dd; }
+.card { position: absolute; background: #f6f2ea; border-radius: 4px; box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 12px 30px rgba(40,30,20,.18), 0 2px 6px rgba(40,30,20,.12); }
+.card .hdr { position: absolute; left: 26px; right: 26px; top: 20px; display: flex; justify-content: space-between; font-family: var(--mono); font-size: 18px; font-weight: 600; letter-spacing: 3px; color: #4a453d; text-transform: uppercase; }
+.card svg { position: absolute; inset: 0; overflow: visible; }
+.big-num { position: absolute; font-family: var(--mono); font-weight: 600; letter-spacing: 2px; color: var(--red); white-space: nowrap; }
+.rec-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #e0402e; margin-right: 10px; vertical-align: 1px; }
+.stamp { position: absolute; font-family: var(--mono); font-weight: 600; color: var(--red); border: 5px solid var(--red); padding: 6px 18px; letter-spacing: 4px; text-transform: uppercase; border-radius: 6px; mix-blend-mode: multiply; }
+
+/* controls */
+#controls { display: flex; align-items: center; gap: 12px; margin-top: 10px; color: #cfc8ba; font: 13px var(--mono); width: min(92vw, 540px); }
+#controls button { background: #2c2a26; color: #eee; border: 1px solid #444; border-radius: 6px; padding: 6px 12px; font: inherit; cursor: pointer; }
+#scrub { flex: 1; accent-color: var(--red); }
+body.render #controls, body.render #gate { display: none !important; }
+#gate { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(20,19,17,.55); backdrop-filter: blur(3px); }
+.gate-card { background: var(--paper); padding: 42px 46px 34px; border-radius: 6px; text-align: center; box-shadow: 0 30px 80px rgba(0,0,0,.5); max-width: 86vw; }
+.gate-kicker { font: 600 12px var(--mono); letter-spacing: 3px; color: #6d665a; }
+.gate-title { font: 700 40px/1.05 var(--serif); color: var(--ink); margin: 14px 0 26px; }
+.gate-title::first-line { color: var(--ink); }
+#gate-play { background: var(--red); color: #fff; border: 0; border-radius: 999px; padding: 12px 28px; font: 600 15px var(--mono); letter-spacing: 2px; cursor: pointer; }
+.gate-note { margin-top: 16px; font: 12px/1.5 var(--mono); color: #7a7367; max-width: 320px; }
