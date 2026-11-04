@@ -64,3 +64,5 @@ hardware GL. The default is SwiftShader, at about 0.25 s per frame at 540p.
 | 170–179 | `sky`, `globe`, `finale` | Plane overhead with its pitch line in the sky; globe; end card |
 
 The location, coordinates, scores, and tail numbers are illustrative.
+
+See [docs/PROCESS.md](docs/PROCESS.md) for how it was made, the iteration log, and the learnings.
