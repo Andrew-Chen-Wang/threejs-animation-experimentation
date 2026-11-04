@@ -92,17 +92,35 @@ function frame(t) {
 const playBtn = document.getElementById('play'), scrub = document.getElementById('scrub'), clock = document.getElementById('clock'), gate = document.getElementById('gate');
 scrub.max = DURATION;
 let t = Math.min(DURATION, +(params.get('t') || 0)), playing = false, last = 0;
+// Narration from the original short. When it is playing it is the clock; past its end (or if it
+// fails to load or play) the animation runs on its own clock, so captions and scenes always continue.
+const audio = new Audio('./narration.mp3'); audio.preload = 'auto';
+let audioOK = false; audio.addEventListener('canplay', () => (audioOK = true), { once: true }); audio.addEventListener('error', () => (audioOK = false));
+const muteBtn = document.getElementById('mute');
+const setMuted = (m) => { audio.muted = m; muteBtn.textContent = m ? 'Sound off' : 'Sound on'; };
+muteBtn.onclick = () => setMuted(!audio.muted);
+const syncAudio = () => {
+  if (!audioOK) return;
+  if (playing && t < audio.duration) { if (Math.abs(audio.currentTime - t) > 0.15) audio.currentTime = t; if (audio.paused) audio.play().catch(() => (audioOK = false)); }
+  else if (!audio.paused) audio.pause();
+};
 const fmt = (s) => `${Math.floor(s / 60)}:${(s % 60).toFixed(1).padStart(4, '0')}`;
-function setPlaying(p) { playing = p; playBtn.textContent = p ? 'Pause' : 'Play'; last = performance.now(); if (p && t >= DURATION) t = 0; }
+function setPlaying(p) { playing = p; playBtn.textContent = p ? 'Pause' : 'Play'; last = performance.now(); if (p && t >= DURATION) t = 0; syncAudio(); }
+const seek = (nt) => { t = Math.max(0, Math.min(DURATION, nt)); if (audioOK && t < audio.duration) audio.currentTime = t; syncAudio(); };
 playBtn.onclick = () => setPlaying(!playing);
 document.getElementById('gate-play').onclick = () => { gate.style.display = 'none'; setPlaying(true); };
-scrub.oninput = () => { t = +scrub.value; };
+scrub.oninput = () => seek(+scrub.value);
 addEventListener('keydown', (e) => {
   if (e.code === 'Space') { e.preventDefault(); gate.style.display = 'none'; setPlaying(!playing); }
-  if (e.code === 'ArrowRight' || e.code === 'ArrowLeft') { t = Math.max(0, Math.min(DURATION, t + (e.code === 'ArrowRight' ? 1 : -1) * (e.shiftKey ? 10 : 2))); }
+  if (e.code === 'KeyM') setMuted(!audio.muted);
+  if (e.code === 'ArrowRight' || e.code === 'ArrowLeft') seek(t + (e.code === 'ArrowRight' ? 1 : -1) * (e.shiftKey ? 10 : 2));
 });
 function loop(now) {
-  if (playing) { t += Math.min(0.1, (now - last) / 1000); if (t >= DURATION) { t = DURATION; setPlaying(false); } }
+  if (playing) {
+    if (audioOK && !audio.paused && !audio.ended) t = audio.currentTime;
+    else t += Math.min(0.1, (now - last) / 1000);
+    if (t >= DURATION) { t = DURATION; setPlaying(false); }
+  }
   last = now;
   frame(t); scrub.value = t; clock.textContent = fmt(t);
   requestAnimationFrame(loop);

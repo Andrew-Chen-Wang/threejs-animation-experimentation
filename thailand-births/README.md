@@ -10,15 +10,19 @@ with a single red accent, mono-type numbers, two-word white captions, and film g
 The reference also cuts to a presenter on camera and shows press photos of officials. Those shots
 are replaced with animated cut-paper beats, so the piece contains no real person's likeness.
 
-- **Watch:** [`renders/thailand-births-720p.mp4`](renders/thailand-births-720p.mp4) (720×1280, 30 fps, silent).
+- **Watch:** [`renders/thailand-births-720p.mp4`](renders/thailand-births-720p.mp4) (720×1280, 30 fps, with the original narration).
 - **Interactive:** the live page is deployed with the other experiments, under `/thailand-births/` on the GitHub Pages site.
 
-## Sound
+## Sound and timing
 
-There is no narration audio. The uploaded copy of the short had no audio track, and the YouTube
-download was blocked. The captions carry the whole script, and they're timed to the reference: the
-burned-in captions were read off frames at 0.25 s steps (see [`src/captions.js`](src/captions.js)).
-A recording of the narration can be laid under the render as-is.
+The soundtrack is the original short's narration, in [`public/narration.mp3`](public/narration.mp3).
+On the live page the audio drives the clock, so scrubbing and seeking stay in sync. If the audio
+can't load or play, the animation runs on its own clock and the captions still carry the script.
+
+The captions use the reference's two-word chunks. Each chunk starts at its first word's start
+time in a [faster-whisper](https://github.com/SYSTRAN/faster-whisper) transcript (`small.en`, word
+timestamps). The few names Whisper misheard (Monsikarn Kanchanajittra, Mahidol, "chips in") were
+matched by hand; see [`src/captions.js`](src/captions.js). The scene cues are keyed to those times.
 
 ## Scenes
 
@@ -47,11 +51,11 @@ npm run dev:thailand -- --port 5174          # open the printed URL; ?t=60 start
 npm run build:thailand                        # -> dist-thailand/
 ```
 
-Space plays and pauses. ←/→ seek 2 s (10 s with Shift).
+Space plays and pauses, M mutes, and ←/→ seek 2 s (10 s with Shift).
 
 ```bash
 npx vite --config vite.thailand.config.js --port 5174 &
-PORT=5174 node scripts/render.mjs out/thailand.mp4 --w 1080 --fps 30 --audio none
+PORT=5174 node scripts/render.mjs out/thailand.mp4 --w 1080 --fps 30 --audio thailand-births/public/narration.mp3
 ```
 
 `?render` mode exposes `window.__frame(t)`, so every frame is rendered on its own and the output is

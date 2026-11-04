@@ -85,7 +85,7 @@ function rates() {
     const jt = jp.position.y + 1.14 * rateK;
     at(jpm, jp.position.x - 0.45, jt, 0.45); at(jpw, jp.position.x + 0.05, jt, 0.45); at(jpk, jp.position.x + 0.5, jt, 0.45);
     [jpm, jpw, jpk].forEach((p, i) => { p.userData.base = null; show(p, t, 20.3 + i * 0.12, Infinity, 'drop', 0.45); });
-    jpTag.position.set(jp.position.x, jt - 0.72, 0.86); jpTag.userData.base = null; show(jpTag, t, 23.7, Infinity, 'pop');
+    jpTag.position.set(jp.position.x, jt - 0.72, 0.86); jpTag.userData.base = null; show(jpTag, t, 23.4, Infinity, 'pop');
     jpNews.position.set(1.3, 6.6, 0.4); jpNews.userData.base = null; show(jpNews, t, 20.5, Infinity, 'drop');
     line.scale.y = 1 + Math.max(0, Math.sin((t - 11) * 6)) * 0.5 * (ramp(t, 11, 11.1) - ramp(t, 12.6, 12.8));
     S.cam(t, lerp(0.15, 0.05, pull), lerp(3.35, 4.15, pull), lerp(lerp(14.2, 13.2, ramp(t, 0, 19.6)), 19.2, pull));
@@ -104,7 +104,7 @@ function births() {
   const key = S.add(slip([{ t: '1 card ≈ 67,000 births', size: 0.1, font: FONT.mono, weight: 500, color: C.g2 }], { seed: 23 }), 1.05, 6.1, 0.3);
   return { S, update(t) {
     now.forEach((m, i) => show(m, t, 25.1 + i * 0.12, Infinity, 'drop', 0.4));
-    show(nowL, t, 26.4, Infinity, 'pop'); show(key, t, 26.8, 30.4, 'pop');
+    show(nowL, t, 25.6, Infinity, 'pop'); show(key, t, 26.8, 30.4, 'pop');
     then.forEach((m, i) => {
       const fallT = i >= 6 ? 31.0 + (17 - i) * 0.19 : Infinity;
       show(m, t, 28.75 + i * 0.05, Infinity, 'drop', 0.35);
@@ -213,7 +213,7 @@ function survey() {
   return { S, update(t) {
     row.forEach((p, i) => show(p, t, 50.75 + i * 0.07, Infinity, 'pop'));
     show(ask, t, 51.9, 53.35, 'pop'); show(yr, t, 53.5, 56.85, 'fade'); show(nida, t, 54.4, 56.85); show(ages, t, 58.0, 66.0, 'pop');
-    setOpt(o1, t, 57.0, 62.1, 57.0, 0.65); setOpt(o2, t, 62.25, 65.95, 62.25, 0.64); setOpt(o3, t, 66.0, Infinity, 69.1, 0.22);
+    setOpt(o1, t, 57.0, 62.1, 57.0, 0.65); setOpt(o2, t, 62.25, 65.95, 62.25, 0.64); setOpt(o3, t, 66.0, Infinity, 68.75, 0.22);
     show(sch, t, 57.1, 62.1, 'pop'); show(uni, t, 57.25, 62.1, 'pop'); show(path, t, 57.4, 62.1, 'fade');
     grad.userData.base = null; grad.position.x = lerp(-0.85, 0.5, ramp(t, 59.4, 61.6)); show(grad, t, 59.3, 61.8, 'pop', 0.25);
     walkK = t > 63.2 && t < 65.6 ? 1 : 0;
@@ -289,7 +289,7 @@ function seminar() {
     show(off, t, 87.0, 89.15, 'rise'); show(pod, t, 87.0, 89.15, 'rise'); show(offL, t, 87.3, 89.15, 'pop');
     show(old, t, 89.3, Infinity, 'pop'); show(oldL, t, 89.5, Infinity, 'pop'); show(arrow, t, 89.8, Infinity, 'fade');
     reds.forEach((n, i) => show(n, t, 90.0 + i * 0.09, Infinity, 'drop', 0.4));
-    show(newL, t, 90.1, Infinity, 'pop'); show(usd, t, 91.0, Infinity, 'fade'); show(month, t, 92.0, Infinity, 'pop');
+    show(newL, t, 90.1, Infinity, 'pop'); show(usd, t, 91.0, Infinity, 'fade'); show(month, t, 91.3, Infinity, 'pop');
     kids.forEach((k, i) => show(k, t, 92.75 + i * 0.1, Infinity, 'drop', 0.4)); ageT.forEach((k, i) => show(k, t, 92.85 + i * 0.1, Infinity, 'fade'));
     show(under, t, 93.7, Infinity, 'pop');
     S.cam(t, 0, 3.35, lerp(15.2, 14.8, ramp(t, 84, 94.1)));
