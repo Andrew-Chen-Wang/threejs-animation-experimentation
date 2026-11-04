@@ -25,7 +25,7 @@ await page.waitForFunction(() => window.__ready, null, { timeout: 180000 });
 await page.evaluate(() => window.__ready);
 const TO = +opt('to', await page.evaluate(() => window.__duration));
 
-const audio = ['public/audio/narration.m4a', 'public/audio/narration.mp3', 'public/audio/narration.wav'].find(existsSync);
+const audio = opt('audio', '') === 'none' ? undefined : ['public/audio/narration.m4a', 'public/audio/narration.mp3', 'public/audio/narration.wav'].find(existsSync);
 const ff = spawn('ffmpeg', ['-v', 'error', '-y', '-f', 'image2pipe', '-framerate', String(FPS), '-i', '-',
   ...(audio ? ['-ss', String(FROM), '-i', audio, '-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '160k', '-shortest'] : []),
   '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', CRF, '-preset', 'slow', '-movflags', '+faststart', out],

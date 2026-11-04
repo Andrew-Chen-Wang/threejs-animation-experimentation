@@ -10,6 +10,8 @@ cpSync('codex-6-astra-low/dist-film',codex,{recursive:true});
 copyFileSync(resolve(codex,'film.html'),resolve(codex,'index.html'));
 copyFileSync('codex-6-astra-low/watch.html',resolve(codex,'watch.html'));
 cpSync('codex-6-astra-low/renders',resolve(codex,'renders'),{recursive:true});
+cpSync('dist-thailand',resolve(site,'thailand-births'),{recursive:true});
+cpSync('thailand-births/renders',resolve(site,'thailand-births/renders'),{recursive:true});
 mkdirSync(resolve(site,'audio'),{recursive:true});
 copyFileSync('codex-6-astra-low/public/film/audio.m4a',resolve(site,'audio/narration.m4a'));
 writeFileSync(resolve(site,'.nojekyll'),'');

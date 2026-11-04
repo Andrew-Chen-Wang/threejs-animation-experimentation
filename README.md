@@ -13,6 +13,7 @@ Each beat was re-staged as its own 3D scene.
 
 - [Opus 5.5 animation](https://andrew-chen-wang.github.io/threejs-animation-experimentation/) — the original project in this repository.
 - [Codex 6 Astra Low animation](https://andrew-chen-wang.github.io/threejs-animation-experimentation/codex-6-astra-low/) — a separate experiment with its own [rendered finale](https://andrew-chen-wang.github.io/threejs-animation-experimentation/codex-6-astra-low/watch.html) and [learnings](codex-6-astra-low/README.md).
+- [Thailand Has Fewer Babies Than Japan](https://andrew-chen-wang.github.io/threejs-animation-experimentation/thailand-births/): a separate cut-paper re-telling of [this YouTube short](https://www.youtube.com/shorts/1AakgfT9qis), with a [720p render](thailand-births/renders/thailand-births-720p.mp4) and [notes](thailand-births/README.md).
 
 It seemed like **Opus 5.5 did a better job overall**, as a qualitative assessment of these experiments. The Codex notes cover the successive corrections around explanation, sustained motion, and the 3D pencil-drawn style.
 
